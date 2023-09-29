@@ -6,45 +6,44 @@ from Car import Car
 import time
 
 class keyTracker:
-    #usage: first value indicates forward (+) or backward (-), second indicates left (-) or right (+)
+    #drive_vector usage: first value indicates forward (+) or backward (-), second indicates left (-) or right (+)
     #purpose: more natural driving - forward and backward cancel each other, as do left and right, and releasing one key doesn't simply stop the whole car from any and all action. Additionally, allows for simultaneous turning and moving
     drive_vector = [0, 0]
-
     braking = False
-
     speed = 100
+    car = Car()
 
     def drive(self):
         if self.drive_vector[0] > 0:
             if self.drive_vector[1] == 0:
                 #directly forward
-                car.control_car(speed, speed)
+                car.control_car(self.speed, self.speed)
             elif self.drive_vector[1] > 0:
                 #forward and right
-                car.control_car(speed, 0)
+                car.control_car(self.speed, 0)
             else:
                 #forward and left
-                car.control_car(0, speed)
+                car.control_car(0, self.speed)
         elif self.drive_vector[0] < 0:
             if self.drive_vector[1] == 0:
                 #directly backward
-                car.control_car(-speed, -speed)
+                car.control_car(-self.speed, -self.speed)
             elif self.drive_vector[1] > 0:
                 #backward and right
-                car.control_car(-speed, 0)
+                car.control_car(-self.speed, 0)
             else:
                 #backward and left
-                car.control_car(0, -speed)
+                car.control_car(0, -self.speed)
         else:
             if self.drive_vector[1] == 0:
                 #no motion
                 car.control_car(0, 0)
             elif self.drive_vector[1] > 0:
                 #only right
-                car.control_car(speed, -speed)
+                car.control_car(self.speed, -self.speed)
             else:
                 #only left
-                car.control_car(-speed, speed)
+                car.control_car(-self.speed, self.speed)
 
 
     def press_callback(self, key):
@@ -89,8 +88,5 @@ class keyTracker:
             self.drive_vector[1] -= 1
         drive()
 
-# l = keyboard.Listener(on_press=press_callback, on_release=release_callback)
 k = keyTracker()
 listen_keyboard(on_press=k.press_callback,on_release=k.release_callback)
-# l.start()
-# l.join()
