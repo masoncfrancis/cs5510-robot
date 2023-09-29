@@ -90,5 +90,5 @@ def release_callback(key):
 
 # l = keyboard.Listener(on_press=press_callback, on_release=release_callback)
 listen_keyboard(on_press=press_callback,on_release=release_callback)
-l.start()
-l.join()
+# l.start()
+# l.join()
