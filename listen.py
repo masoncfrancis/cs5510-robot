@@ -86,7 +86,7 @@ class keyTracker:
         elif key == 'd' or key == 'right':
             #stop right
             self.drive_vector[1] -= 1
-        drive()
+        self.drive()
 
 k = keyTracker()
 listen_keyboard(on_press=k.press_callback,on_release=k.release_callback)
