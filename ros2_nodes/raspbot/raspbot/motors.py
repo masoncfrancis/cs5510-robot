@@ -1,3 +1,7 @@
+import rclpy
+from rclpy.node import Node
+
+from std_msgs.msg import Int32MultiArray
 import smbus
 import time
 import math
@@ -24,7 +28,6 @@ class Car:
             self._device.write_i2c_block_data(self._addr, register, data)
         except:
             print('write_array error')
-        pass
 
     def control_car(self, left, right):
         """
@@ -58,21 +61,40 @@ class Car:
         data = [servo_id, angle]
         self.__write_array(register, data)
 
+
+class MinimalSubscriber(Node):
+  def __init__(self):
+    super().__init__('motors')
+    self.car = Car()
+    self.motor_subscription = self.create_subscription(Int32MultiArray, '/motor_control', self.motor_callback, 10)
+    self.servo_subscription = self.create_subscription(Int32MultiArray, '/servo_control', self.servo_callback, 10)
+    self.servo1_angle = -1
+    self.servo2_angle = -1
+  
+  def motor_callback(self, msg):
+    self.car.control_car(msg.data[0], msg.data[1])
+  
+  def servo_callback(self, msg):
+    if msg.data[0] != self.servo1_angle:
+      self.car.set_servo(1, msg.data[0])
+      self.servo1_angle = msg.data[0]
+    if msg.data[1] != self.servo2_angle:
+      self.car.set_servo(2, msg.data[1])
+      self.servo2_angle = msg.data[1]
+
+def main(args=None):
+  rclpy.init(args=args)
+  
+  subscriber = MinimalSubscriber()
+  
+  try:
+    rclpy.spin(subscriber)
+  except Exception as e:
+    print(e)
+    subscriber.car.stop()
+  
+  subscriber.destroy_node()
+  rclpy.shutdown()
+
 if __name__ == '__main__':
-    car = Car()
-
-    car.set_servo(1, 90)
-    time.sleep(0.5)
-
-    car.set_servo(2, 90)
-    time.sleep(0.5)
-
-    car.set_servo(1, 180)
-    time.sleep(0.5)
-
-    car.set_servo(2, 180)
-    time.sleep(0.5)
-
-    car.set_servo(1, 90)
-    time.sleep(0.5)
-    car.set_servo(2, 90)
+  main()
