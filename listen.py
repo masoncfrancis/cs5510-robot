@@ -9,7 +9,7 @@ import time
 #purpose: more natural driving - forward and backward cancel each other, as do left and right, and releasing one key doesn't simply stop the whole car from any and all action. Additionally, allows for simultaneous turning and moving
 drive_vector = [0, 0]
 
-braking = False
+# braking = False
 
 speed = 100
 
@@ -47,8 +47,8 @@ def drive():
 
 
 def press_callback(key):
-    if braking:
-        return
+    # if braking:
+        # return
     
     if key == 'w' or key == 'up':
         #forward
@@ -69,10 +69,10 @@ def press_callback(key):
     drive()
 
 def release_callback(key):
-    if key == 'space':
-        braking = False
-    elif braking:
-        return
+    # if key == 'space':
+        # braking = False
+    # elif braking:
+        # return
     
     if key == 'w' or key == 'up':
         #stop forward
