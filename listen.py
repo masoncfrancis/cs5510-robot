@@ -17,33 +17,33 @@ class keyTracker:
         if self.drive_vector[0] > 0:
             if self.drive_vector[1] == 0:
                 #directly forward
-                car.control_car(self.speed, self.speed)
+                self.car.control_car(self.speed, self.speed)
             elif self.drive_vector[1] > 0:
                 #forward and right
-                car.control_car(self.speed, 0)
+                self.car.control_car(self.speed, 0)
             else:
                 #forward and left
-                car.control_car(0, self.speed)
+                self.car.control_car(0, self.speed)
         elif self.drive_vector[0] < 0:
             if self.drive_vector[1] == 0:
                 #directly backward
-                car.control_car(-self.speed, -self.speed)
+                self.car.control_car(-self.speed, -self.speed)
             elif self.drive_vector[1] > 0:
                 #backward and right
-                car.control_car(-self.speed, 0)
+                self.car.control_car(-self.speed, 0)
             else:
                 #backward and left
-                car.control_car(0, -self.speed)
+                self.car.control_car(0, -self.speed)
         else:
             if self.drive_vector[1] == 0:
                 #no motion
-                car.control_car(0, 0)
+                self.car.control_car(0, 0)
             elif self.drive_vector[1] > 0:
                 #only right
-                car.control_car(self.speed, -self.speed)
+                self.car.control_car(self.speed, -self.speed)
             else:
                 #only left
-                car.control_car(-self.speed, self.speed)
+                self.car.control_car(-self.speed, self.speed)
 
 
     def press_callback(self, key):
