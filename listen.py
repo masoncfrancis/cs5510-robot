@@ -1,5 +1,6 @@
-from pynput import keyboard
-from pynput.keyboard import Key
+# from pynput import keyboard
+# from pynput.keyboard import Key
+from sshkeyboard import listen_keyboard
 
 from Car import Car
 import time
@@ -7,6 +8,8 @@ import time
 #usage: first value indicates forward (+) or backward (-), second indicates left (-) or right (+)
 #purpose: more natural driving - forward and backward cancel each other, as do left and right, and releasing one key doesn't simply stop the whole car from any and all action. Additionally, allows for simultaneous turning and moving
 drive_vector = [0, 0]
+
+braking = False
 
 speed = 100
 
@@ -44,76 +47,48 @@ def drive():
 
 
 def press_callback(key):
-    try:
-        # print('alphanumeric key {} pressed'.format(key.char))
-        if key.char == 'w':
-            #forward
-            drive_vector[0] += 1
-        elif key.char == 'a':
-            #left
-            drive_vector[1] -= 1
-        elif key.char == 's':
-            #backward
-            drive_vector[0] -= 1
-        elif key.char == 'd':
-            #right
-            drive_vector[1] += 1
-        else:
-            print("invalid action")
-    except AttributeError:
-        if key == Key.up:
-            #forward
-            drive_vector[0] += 1
-        elif key == Key.down:
-            #backward
-            drive_vector[0] -= 1
-        elif key == Key.right:
-            #right
-            drive_vector[1] += 1
-        elif key == Key.left:
-            #left
-            drive_vector[1] -= 1
-        elif key == Key.esc:
-            #stop the car
-            drive_vector = [0, 0]
-            print('quiting...')
-        else:
-            print("invalid action")
+    if braking:
+        return
+    
+    if key == 'w' or key == 'up':
+        #forward
+        drive_vector[0] += 1
+    elif key == 'a' or key == 'left':
+        #left
+        drive_vector[1] -= 1
+    elif key == 's'or key == 'down':
+        #backward
+        drive_vector[0] -= 1
+    elif key == 'd'or key == 'right':
+        #right
+        drive_vector[1] += 1
+    elif key == 'space':
+        #force stop
+        braking = True
+        drive_vector = [0,0]
     drive()
 
 def release_callback(key):
-    # print('{} released'.format(key))
-    try:
-        if key.char in ['w','a','s','d']:
-            if key.char == 'w':
-            #stop forward
-            drive_vector[0] -= 1
-        elif key.char == 'a':
-            #stop left
-            drive_vector[1] += 1
-        elif key.char == 's':
-            #stop backward
-            drive_vector[0] += 1
-        elif key.char == 'd':
-            #stop right
-            drive_vector[1] -= 1
-    except AttributeError:
-        if key == Key.up:
-            #stop forward
-            drive_vector[0] -= 1
-        elif key == Key.down:
-            #stop backward
-            drive_vector[0] += 1
-        elif key == Key.right:
-            #stop right
-            drive_vector[1] -= 1
-        elif key == Key.left:
-            #stop left
-            drive_vector[1] += 1
+    if key == 'space':
+        braking = False
+    elif braking:
+        return
+    
+    if key == 'w' or key == 'up':
+        #stop forward
+        drive_vector[0] -= 1
+    elif key == 'a'or key == 'left':
+        #stop left
+        drive_vector[1] += 1
+    elif key == 's'or key == 'down':
+        #stop backward
+        drive_vector[0] += 1
+    elif key == 'd' or key == 'right':
+        #stop right
+        drive_vector[1] -= 1
     drive()
-    if key == Key.esc:
-        return False
 
-l = keyboard.Listener(on_press=press_callback, on_release=release_callback)
+# l = keyboard.Listener(on_press=press_callback, on_release=release_callback)
+listen_keyboard(on_press=press_callback,on_release=release_callback)
 l.start()
 l.join()
