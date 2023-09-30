@@ -6,7 +6,7 @@ if __name__ == '__main__':
     ## Constant values
     speed = 100
     drive_time = 2
-    turn_time = 2
+    turn_time = 0.95
     pause_time = 0.1
     
     ## Navigate in a square
