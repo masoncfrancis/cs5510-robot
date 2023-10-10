@@ -11,7 +11,7 @@ camera = cv2.VideoCapture(0)  # 0 indicates the default camera (Raspberry Pi cam
 return_value, image = camera.read()
 
 # Save the image
-cv2.imwrite('/home/ubuntu/image_opencv.jpg', image)
+cv2.imwrite('testimage_opencv.jpg', image)
 
 # Release the camera
 camera.release()
