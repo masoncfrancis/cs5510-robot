@@ -16,6 +16,10 @@ if [ -z "$PASSWORD" ]; then
 network:
   version: 2
   renderer: networkd
+  ethernets:
+    eth0:
+      dhcp4: true
+      optional: true
   wifis:
     wlan0:
       dhcp4: yes
@@ -28,6 +32,10 @@ else
 network:
   version: 2
   renderer: networkd
+  ethernets:
+    eth0:
+      dhcp4: true
+      optional: true
   wifis:
     wlan0:
       dhcp4: yes
