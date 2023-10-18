@@ -13,12 +13,18 @@ while True:
     try:
         # Capture an image
         return_value, image = camera.read()
+
+        imgName = "{:06d}.png".format(i)
+
         # Save the image
-        cv2.imwrite('testimage_opencv.jpg', image)
+        cv2.imwrite(imgName, image)
+
+        print(f"{imgName} has been written")
 
         # wait 10 seconds
         time.sleep(10)
     except KeyboardInterrupt:
+        print("Exiting...")
         # Release the camera
         camera.release()
         sys.exit()
