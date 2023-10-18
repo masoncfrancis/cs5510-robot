@@ -15,7 +15,7 @@ while True:
         # Capture an image
         return_value, image = camera.read()
 
-        imgName = "{:06d}.png".format(i)
+        imgName = "outputImages/{:06d}.png".format(i)
 
         # Save the image
         cv2.imwrite(imgName, image)
