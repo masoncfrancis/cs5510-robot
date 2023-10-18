@@ -2,7 +2,7 @@
 
 ## Dependencies
 
-Install dependencies by running this command
+Install dependencies by running this command on your Raspberry Pi:
 
 ```bash
 pip install -r requirements.txt
