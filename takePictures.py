@@ -2,15 +2,14 @@ import cv2
 import sys
 import time
 
-# Initialize the camera
-camera = cv2.VideoCapture(0)  # 0 indicates the default camera (Raspberry Pi camera module)
 
-# Set camera resolution (optional)
-# camera.set(3, 640)  # Width
-# camera.set(4, 480)  # Height
+
 i = 0
 while True:
     try:
+
+        # Initialize the camera
+        camera = cv2.VideoCapture(0)
         
         # Capture an image
         return_value, image = camera.read()
@@ -22,13 +21,15 @@ while True:
 
         print(f"{imgName} has been written")
 
+        # release the camera
+        camera.release()
+
         # increment the counter
         i += 1
 
         # wait 10 seconds
-        time.sleep(10)
+        time.sleep(2)
     except KeyboardInterrupt:
         print("Exiting...")
         # Release the camera
-        camera.release()
         sys.exit()
