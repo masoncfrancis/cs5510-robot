@@ -14,7 +14,7 @@ while True:
         # Capture an image
         return_value, image = camera.read()
 
-        imgName = "outputImages/{:06d}.png".format(i)
+        imgName = "data/sequence/{:06d}.png".format(i) ## Changed for organization
 
         # Save the image
         cv2.imwrite(imgName, image)
@@ -28,7 +28,7 @@ while True:
         i += 1
 
         # wait 10 seconds
-        time.sleep(2)
+        time.sleep(1) ## changed so we have more images to better estimate our path (might need to decrease the time even more)
     except KeyboardInterrupt:
         print("Exiting...")
         # Release the camera
