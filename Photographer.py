@@ -3,11 +3,9 @@ import sys
 import time
 
 
-
-i = 0
-while True:
-    try:
-
+class Photographer:
+    self.i = 0
+    def takePicture(self)
         # Initialize the camera
         camera = cv2.VideoCapture(0)
         
@@ -25,11 +23,11 @@ while True:
         camera.release()
 
         # increment the counter
-        i += 1
+        self.i += 1
 
-        # wait 10 seconds
-        time.sleep(2)
-    except KeyboardInterrupt:
-        print("Exiting...")
-        # Release the camera
-        sys.exit()
+        # # wait 10 seconds
+        # time.sleep(2)
+    # except KeyboardInterrupt:
+        # print("Exiting...")
+        # # Release the camera
+        # sys.exit()
