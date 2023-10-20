@@ -44,7 +44,8 @@ if __name__ == '__main__':
     while True:
         try:
             pt.updatePose(k.drive_vector)
-            if time.time_ns() - last_frame > 1_000_000_000 // max_fps:
+            print("updated the pose")
+            if (time.time_ns() - last_frame) > (1_000_000_000 // max_fps):
                 print("Taking a picture!")
                 pg.takePicture()
                 pt.writePose()
