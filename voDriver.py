@@ -28,12 +28,13 @@ class PoseTracker:
         delta_time = time.time() - self.last_update
         self.last_update = time.time()
         
+        
         #update position and angle based on drive_vector
-        self.current_pose[0] += self.speed * delta_time * math.cos(self.current_pose[3])
-        self.current_pose[2] += self.speed * delta_time * math.sin(self.current_pose[3])
+        self.current_pose[0] += self.speed * delta_time * math.cos(self.current_pose[3]) * drive_vector[0]
+        self.current_pose[2] += self.speed * delta_time * math.sin(self.current_pose[3]) * drive_vector[0]
         #z_pos assumed to not change
         
-        self.current_pose[3] += self.turn_speed * delta_time
+        self.current_pose[3] += self.turn_speed * delta_time * drive_vector[1]
     
     def writePose(self):
         f = open("poses/001.txt", "a")
@@ -47,7 +48,6 @@ def trackingSleep(sleepTime, FPS, pt, pg, drive_vector):
     while (time.time() - entered) < (sleepTime):
         try:
             pt.updatePose(drive_vector)
-            print("updated the pose")
             if (time.time() - last_frame) > (1 / max_fps):
                 print("Taking a picture!")
                 pg.takePicture()
