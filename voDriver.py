@@ -4,6 +4,7 @@ from drive import keyTracker
 # from sshkeyboard import listen_keyboard_manual
 import time
 import math
+import sys
 
 
 max_fps = 15
@@ -74,12 +75,12 @@ if __name__ == '__main__':
         car.control_car(speed, speed)
         trackingSleep(drive_time, max_fps, pt, pg, [1, 0])
         car.control_car(0, 0)
-        # time.sleep(pause_time)
+        time.sleep(pause_time)
         ## Turn Left
         car.control_car(-speed, speed)
         trackingSleep(turn_time, max_fps, pt, pg, [0, -1])
         car.control_car(0, 0)
-        # time.sleep(pause_time)
+        time.sleep(pause_time)
     
     ## Extra stop just in case
     car.control_car(0, 0)
