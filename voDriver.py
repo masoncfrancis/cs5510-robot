@@ -60,8 +60,8 @@ async def keyboardLoop():
 if __name__ == '__main__':
     k = keyTracker()
     asyncio.gather(
-        keyboardLoop,
-        mainLoop,
+        asyncio.create_task(keyboardLoop),
+        asyncio.create_task(mainLoop),
         )
     print("is this even a viable exit point?")
     
