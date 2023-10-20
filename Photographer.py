@@ -12,7 +12,7 @@ class Photographer:
         # Capture an image
         return_value, image = camera.read()
 
-        imgName = "outputImages/{:06d}.png".format(i)
+        imgName = "outputImages/{:06d}.png".format(self.i)
 
         # Save the image
         cv2.imwrite(imgName, image)

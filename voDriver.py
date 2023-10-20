@@ -44,6 +44,7 @@ if __name__ == '__main__':
     
     #take pictures at max rate of max_fps
     last_frame = 0
+    pg.takePicture()
     while True:
         try:
             pt.updatePose(k.drive_vector)
