@@ -5,7 +5,7 @@ from drive import keyTracker
 import time
 import math
 
-last_frame = 0
+
 max_fps = 15
 ## Constant values
 speed = 100
@@ -42,11 +42,12 @@ class PoseTracker:
    
 def trackingSleep(sleepTime, FPS, pt, pg, drive_vector):
     entered = time.time_ns()
-    while time.time_ns() - entered < (1_000_000_000 * sleepTime):
+    last_frame = 0
+    while time.time_ns() - entered < (10 * sleepTime):
         try:
             pt.updatePose(drive_vector)
             print("updated the pose")
-            if (time.time_ns() - last_frame) > (1_000_000_000 // max_fps):
+            if (time.time_ns() - last_frame) > (10 // max_fps):
                 print("Taking a picture!")
                 pg.takePicture()
                 pt.writePose()
