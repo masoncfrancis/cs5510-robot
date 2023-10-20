@@ -27,7 +27,7 @@ class PoseTracker:
     
     def writePose(self):
         f = open("poses/001.txt", "a")
-        f.write("x x x {} x x x {} x x x {}".format(current_pose[0], current_pose[1], current_pose[2]))
+        f.write("x x x {} x x x {} x x x {}".format(self.current_pose[0], self.current_pose[1], self.current_pose[2]))
         f.close()
         
     
