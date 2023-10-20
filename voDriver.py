@@ -38,7 +38,7 @@ if __name__ == '__main__':
     print("Do these print statements do anything?")
     k = keyTracker()
     print("Printing does work, right?")
-    asyncio.async(listen_keyboard_manual(on_press=k.press_callback,on_release=k.release_callback))
+    yield from asyncio.run(listen_keyboard_manual(on_press=k.press_callback,on_release=k.release_callback))
     print("I made it this far")
     pt = PoseTracker()
     pg = Photographer()
