@@ -40,9 +40,9 @@ class PoseTracker:
         f.close()
         
    
-  def trackingSleep(time, FPS, pt, pg, drive_vector):
+def trackingSleep(sleepTime, FPS, pt, pg, drive_vector):
     entered = time.time_ns()
-    while time.time_ns() - entered < (1_000_000_000 * time):
+    while time.time_ns() - entered < (1_000_000_000 * sleepTime):
         try:
             pt.updatePose(drive_vector)
             print("updated the pose")
