@@ -32,15 +32,7 @@ class PoseTracker:
         f.write("x x x {} x x x {} x x x {}\n".format(self.current_pose[0], self.current_pose[1], self.current_pose[2]))
         f.close()
         
-def runAsyncio(k):
-    yield from asyncio.run(listen_keyboard_manual(on_press=k.press_callback,on_release=k.release_callback))
-    
-if __name__ == '__main__':
-    print("Do these print statements do anything?")
-    k = keyTracker()
-    print("Printing does work, right?")
-    runAsyncio(k)
-    print("I made it this far")
+def mainLoop():
     pt = PoseTracker()
     pg = Photographer()
     
@@ -52,7 +44,6 @@ if __name__ == '__main__':
     while True:
         try:
             pt.updatePose(k.drive_vector)
-            print("updated the pose")
             if (time.time_ns() - last_frame) > (1_000_000_000 // max_fps):
                 print("Taking a picture!")
                 pg.takePicture()
@@ -62,3 +53,12 @@ if __name__ == '__main__':
             print("Exiting...")
             # Release the camera
             sys.exit()
+    
+if __name__ == '__main__':
+    k = keyTracker()
+    await asyncio.gather(
+        listen_keyboard_manual(on_press=k.press_callback,on_release=k.release_callback),
+        mainLoop,
+        )
+    print("is this even a viable exit point?")
+    
