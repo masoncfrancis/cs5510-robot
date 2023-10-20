@@ -32,6 +32,7 @@ class PoseTracker:
     
     
 if __name__ == '__main__':
+    print("Do these print statements do anything?")
     k = keyTracker()
     print("Printing does work, right?")
     listen_keyboard(on_press=k.press_callback,on_release=k.release_callback)
