@@ -7,11 +7,11 @@ import math
 import sys
 
 
-max_fps = 15
+max_fps = 10
 ## Constant values
 speed = 100
 drive_time = 2
-turn_time = 0.95
+turn_time = 0.65
 pause_time = 0.1
 
 
@@ -48,11 +48,12 @@ def trackingSleep(sleepTime, FPS, pt, pg, drive_vector):
     while (time.time() - entered) < (sleepTime):
         try:
             pt.updatePose(drive_vector)
-            if (time.time() - last_frame) > (1 / max_fps):
+            if (time.time() - last_frame) > (1.0 / max_fps):
+                last_frame = time.time()
                 print("Taking a picture!")
                 pg.takePicture()
                 pt.writePose()
-                last_frame = time.time()
+                
                 
         except KeyboardInterrupt:
             print("Exiting...")
