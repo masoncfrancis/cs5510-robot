@@ -59,7 +59,7 @@ def keyboardLoop():
 
 async def main():
     k = keyTracker()
-    asyncio.gather(
+    await asyncio.gather(
         asyncio.to_thread(keyboardLoop),
         asyncio.to_thread(mainLoop),
         )
