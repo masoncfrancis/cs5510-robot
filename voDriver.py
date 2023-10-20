@@ -25,7 +25,7 @@ class PoseTracker:
         
         self.current_pose[3] += self.turn_speed * (delta_time / 1_000_000_000)
     
-    def writePose():
+    def writePose(self):
         f = open("poses/001.txt", "a")
         f.write("x x x {} x x x {} x x x {}".format(current_pose[0], current_pose[1], current_pose[2]))
         f.close()
