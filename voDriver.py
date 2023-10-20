@@ -55,10 +55,11 @@ def mainLoop():
             sys.exit()
 
 def keyboardLoop():
+    k = keyTracker()
     listen_keyboard(on_press=k.press_callback,on_release=k.release_callback)
 
 async def main():
-    k = keyTracker()
+    
     await asyncio.gather(
         asyncio.to_thread(keyboardLoop),
         asyncio.to_thread(mainLoop),
