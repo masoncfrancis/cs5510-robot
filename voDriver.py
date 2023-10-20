@@ -21,18 +21,18 @@ class PoseTracker:
     
     #convention: [x_pos, y_pos, z_pos, yaw in rads]
     current_pose = [0, 0, 0, 0]
-    last_update = time.time_ns()
+    last_update = time.time()
     
     def updatePose(self, drive_vector):
-        delta_time = time.time_ns() - self.last_update
-        self.last_update = time.time_ns()
+        delta_time = time.time() - self.last_update
+        self.last_update = time.time()
         
         #update position and angle based on drive_vector
-        self.current_pose[0] += self.speed * (delta_time / 1_000_000_000) * math.cos(self.current_pose[3])
-        self.current_pose[2] += self.speed * (delta_time / 1_000_000_000) * math.sin(self.current_pose[3])
+        self.current_pose[0] += self.speed * delta_time * math.cos(self.current_pose[3])
+        self.current_pose[2] += self.speed * delta_time * math.sin(self.current_pose[3])
         #z_pos assumed to not change
         
-        self.current_pose[3] += self.turn_speed * (delta_time / 1_000_000_000)
+        self.current_pose[3] += self.turn_speed * delta_time
     
     def writePose(self):
         f = open("poses/001.txt", "a")
@@ -41,17 +41,17 @@ class PoseTracker:
         
    
 def trackingSleep(sleepTime, FPS, pt, pg, drive_vector):
-    entered = time.time_ns()
+    entered = time.time()
     last_frame = 0
-    while time.time_ns() - entered < (10 * sleepTime):
+    while (time.time() - entered) < (10 * sleepTime):
         try:
             pt.updatePose(drive_vector)
             print("updated the pose")
-            if (time.time_ns() - last_frame) > (10 // max_fps):
+            if (time.time() - last_frame) > (1 / max_fps):
                 print("Taking a picture!")
                 pg.takePicture()
                 pt.writePose()
-                last_frame = time.time_ns()
+                last_frame = time.time()
                 
         except KeyboardInterrupt:
             print("Exiting...")
