@@ -56,7 +56,7 @@ def mainLoop():
     
 if __name__ == '__main__':
     k = keyTracker()
-    await asyncio.gather(
+    asyncio.gather(
         listen_keyboard_manual(on_press=k.press_callback,on_release=k.release_callback),
         mainLoop,
         )
