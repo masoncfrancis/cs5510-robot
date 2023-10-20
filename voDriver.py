@@ -32,7 +32,7 @@ class PoseTracker:
         f.write("x x x {} x x x {} x x x {}\n".format(self.current_pose[0], self.current_pose[1], self.current_pose[2]))
         f.close()
         
-async def mainLoop():
+def mainLoop():
     pt = PoseTracker()
     pg = Photographer()
     
@@ -54,14 +54,17 @@ async def mainLoop():
             # Release the camera
             sys.exit()
 
-async def keyboardLoop():
+def keyboardLoop():
     listen_keyboard(on_press=k.press_callback,on_release=k.release_callback)
-    
-if __name__ == '__main__':
+
+async def main():
     k = keyTracker()
     asyncio.gather(
-        asyncio.create_task(keyboardLoop),
-        asyncio.create_task(mainLoop),
+        asyncio.to_thread(keyboardLoop),
+        asyncio.to_thread(mainLoop),
         )
     print("is this even a viable exit point?")
+    
+if __name__ == '__main__':
+    asyncio.run(main())
     
