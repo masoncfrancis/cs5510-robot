@@ -2,7 +2,7 @@ import asyncio
 # from Car import Car
 from Photographer import Photographer
 from drive import keyTracker
-from sshkeyboard import listen_keyboard_manual
+from sshkeyboard import listen_keyboard_manual, listen_keyboard
 import time
 import math
 import sys
@@ -55,7 +55,7 @@ async def mainLoop():
             sys.exit()
 
 async def keyboardLoop():
-    listen_keyboard_manual(on_press=k.press_callback,on_release=k.release_callback)
+    yield from listen_keyboard(on_press=k.press_callback,on_release=k.release_callback)
     
 if __name__ == '__main__':
     k = keyTracker()
