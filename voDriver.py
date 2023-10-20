@@ -1,9 +1,18 @@
-# from Car import Car
+from Car import Car
 from Photographer import Photographer
 from drive import keyTracker
-from sshkeyboard import listen_keyboard_manual
+# from sshkeyboard import listen_keyboard_manual
 import time
 import math
+
+last_frame = 0
+max_fps = 15
+## Constant values
+speed = 100
+drive_time = 2
+turn_time = 0.95
+pause_time = 0.1
+
 
 class PoseTracker:
     ## Constant values
@@ -30,32 +39,46 @@ class PoseTracker:
         f.write("x x x {} x x x {} x x x {}".format(self.current_pose[0], self.current_pose[1], self.current_pose[2]))
         f.close()
         
-    
-    
-if __name__ == '__main__':
-    print("Do these print statements do anything?")
-    k = keyTracker()
-    print("Printing does work, right?")
-    listen_keyboard_manual(on_press=k.press_callback,on_release=k.release_callback)
-    print("I made it this far")
-    pt = PoseTracker()
-    pg = Photographer()
-    
-    max_fps = 20
-    
-    #take pictures at max rate of max_fps
-    last_frame = 0
-    pg.takePicture()
-    while True:
+   
+  def trackingSleep(time, FPS, pt, pg, drive_vector):
+    entered = time.time_ns()
+    while time.time_ns() - entered < (1_000_000_000 * time):
         try:
-            pt.updatePose(k.drive_vector)
+            pt.updatePose(drive_vector)
             print("updated the pose")
             if (time.time_ns() - last_frame) > (1_000_000_000 // max_fps):
                 print("Taking a picture!")
                 pg.takePicture()
                 pt.writePose()
                 last_frame = time.time_ns()
+                
         except KeyboardInterrupt:
             print("Exiting...")
             # Release the camera
             sys.exit()
+    return
+    
+    
+if __name__ == '__main__':
+
+    pt = PoseTracker()
+    pg = Photographer()
+    
+
+    car = Car()
+    
+    ## Navigate in a square
+    for i in range(4):
+        ## Move Forward
+        car.control_car(speed, speed)
+        trackingSleep(drive_time, max_fps, pt, pg, [1, 0])
+        car.control_car(0, 0)
+        # time.sleep(pause_time)
+        ## Turn Left
+        car.control_car(-speed, speed)
+        trackingSleep(turn_time, max_fps, pt, pg, [0, -1])
+        car.control_car(0, 0)
+        # time.sleep(pause_time)
+    
+    ## Extra stop just in case
+    car.control_car(0, 0)
