@@ -1,8 +1,9 @@
 # from Car import Car
 from Photographer import Photographer
 from drive import keyTracker
-from sshkeyboard import listen_keyboard
+from sshkeyboard import listen_keyboard_manual
 import time
+import math
 
 class PoseTracker:
     ## Constant values
@@ -14,15 +15,15 @@ class PoseTracker:
     last_update = time.time_ns()
     
     def updatePose(self, drive_vector):
-        delta_time = time.time_ns() - last_update
-        last_update = time.time_ns()
+        delta_time = time.time_ns() - self.last_update
+        self.last_update = time.time_ns()
         
         #update position and angle based on drive_vector
-        current_pose[0] += self.speed * (delta_time / 1_000_000_000) * math.cos(current_pose[3])
-        current_pose[2] += self.speed * (delta_time / 1_000_000_000) * math.sin(current_pose[3])
+        self.current_pose[0] += self.speed * (delta_time / 1_000_000_000) * math.cos(self.current_pose[3])
+        self.current_pose[2] += self.speed * (delta_time / 1_000_000_000) * math.sin(self.current_pose[3])
         #z_pos assumed to not change
         
-        current_pose[3] += self.turn_speed * (delta_time / 1_000_000_000)
+        self.current_pose[3] += self.turn_speed * (delta_time / 1_000_000_000)
     
     def writePose():
         f = open("poses/001.txt", "a")
@@ -35,7 +36,7 @@ if __name__ == '__main__':
     print("Do these print statements do anything?")
     k = keyTracker()
     print("Printing does work, right?")
-    listen_keyboard(on_press=k.press_callback,on_release=k.release_callback)
+    listen_keyboard_manual(on_press=k.press_callback,on_release=k.release_callback)
     print("I made it this far")
     pt = PoseTracker()
     pg = Photographer()
