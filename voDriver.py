@@ -33,7 +33,9 @@ class PoseTracker:
     
 if __name__ == '__main__':
     k = keyTracker()
+    print("Printing does work, right?")
     listen_keyboard(on_press=k.press_callback,on_release=k.release_callback)
+    print("I made it this far")
     pt = PoseTracker()
     pg = Photographer()
     
