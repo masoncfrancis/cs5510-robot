@@ -4,8 +4,8 @@ import time
 
 
 class Photographer:
-    self.i = 0
-    def takePicture(self)
+    i = 0
+    def takePicture(self):
         # Initialize the camera
         camera = cv2.VideoCapture(0)
         

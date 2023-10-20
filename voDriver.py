@@ -26,7 +26,7 @@ class PoseTracker:
     
     def writePose():
         f = open("poses/001.txt", "a")
-        f.write("x x x {} x x x {} x x x {}".format(current_pose[0], current_pose[1], current_pose[2])
+        f.write("x x x {} x x x {} x x x {}".format(current_pose[0], current_pose[1], current_pose[2]))
         f.close()
         
     
@@ -45,8 +45,9 @@ if __name__ == '__main__':
         try:
             pt.updatePose(k.drive_vector)
             if time.time_ns() - last_frame > 1_000_000_000 // max_fps:
+                print("Taking a picture!")
                 pg.takePicture()
-                
+                pt.writePose()
                 last_frame = time.time_ns()
         except KeyboardInterrupt:
             print("Exiting...")
