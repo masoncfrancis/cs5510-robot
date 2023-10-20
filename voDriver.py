@@ -32,13 +32,14 @@ class PoseTracker:
         f.write("x x x {} x x x {} x x x {}\n".format(self.current_pose[0], self.current_pose[1], self.current_pose[2]))
         f.close()
         
-    
+def runAsyncio(k):
+    yield from asyncio.run(listen_keyboard_manual(on_press=k.press_callback,on_release=k.release_callback))
     
 if __name__ == '__main__':
     print("Do these print statements do anything?")
     k = keyTracker()
     print("Printing does work, right?")
-    yield from asyncio.run(listen_keyboard_manual(on_press=k.press_callback,on_release=k.release_callback))
+    runAsyncio(k)
     print("I made it this far")
     pt = PoseTracker()
     pg = Photographer()
