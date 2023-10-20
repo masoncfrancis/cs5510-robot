@@ -55,7 +55,7 @@ async def mainLoop():
             sys.exit()
 
 async def keyboardLoop():
-    yield from listen_keyboard(on_press=k.press_callback,on_release=k.release_callback)
+    listen_keyboard(on_press=k.press_callback,on_release=k.release_callback)
     
 if __name__ == '__main__':
     k = keyTracker()
