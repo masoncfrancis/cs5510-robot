@@ -10,8 +10,8 @@ import sys
 max_fps = 20
 ## Constant values
 speed = 100
-drive_time = 4
-turn_time = 1
+drive_time = 2
+turn_time = .75
 pause_time = 0.1
 
 
@@ -45,7 +45,8 @@ class PoseTracker:
 def trackingSleep(sleepTime, FPS, pt, pg, drive_vector):
     entered = time.time()
     last_frame = 0
-    while (time.time() - entered) < (sleepTime):
+    #assume it takes some amount of time to do the pose update and image writing
+    while (time.time() - entered) < (sleepTime - 0.25):
         try:
             
             if (time.time() - last_frame) > (1.0 / max_fps):
@@ -60,7 +61,7 @@ def trackingSleep(sleepTime, FPS, pt, pg, drive_vector):
             print("Exiting...")
             # Release the camera
             sys.exit()
-    return
+    time.sleep(time.time() - entered - sleepTime)
     
     
 if __name__ == '__main__':
