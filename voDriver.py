@@ -7,17 +7,17 @@ import math
 import sys
 
 
-max_fps = 10
+max_fps = 20
 ## Constant values
 speed = 100
-drive_time = 2
-turn_time = 0.65
+drive_time = 4
+turn_time = 1
 pause_time = 0.1
 
 
 class PoseTracker:
     ## Constant values
-    speed = 0.5 #m/s
+    speed = 0.3 #m/s
     turn_speed = 2 #rad/s
     
     #convention: [x_pos, y_pos, z_pos, yaw in rads]
@@ -47,9 +47,10 @@ def trackingSleep(sleepTime, FPS, pt, pg, drive_vector):
     last_frame = 0
     while (time.time() - entered) < (sleepTime):
         try:
-            pt.updatePose(drive_vector)
+            
             if (time.time() - last_frame) > (1.0 / max_fps):
                 last_frame = time.time()
+                pt.updatePose(drive_vector)
                 print("Taking a picture!")
                 pg.takePicture()
                 pt.writePose()
