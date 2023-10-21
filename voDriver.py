@@ -11,7 +11,7 @@ max_fps = 20
 ## Constant values
 speed = 100
 drive_time = 2
-turn_time = .75
+turn_time = .78
 pause_time = 0.1
 
 
@@ -38,7 +38,7 @@ class PoseTracker:
     
     def writePose(self):
         f = open("poses/001.txt", "a")
-        f.write("x x x {} x x x {} x x x {}".format(self.current_pose[0], self.current_pose[1], self.current_pose[2]))
+        f.write("x x x {} x x x {} x x x {}\n".format(self.current_pose[0], self.current_pose[1], self.current_pose[2]))
         f.close()
         
    
