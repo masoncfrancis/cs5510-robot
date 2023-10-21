@@ -88,5 +88,6 @@ class keyTracker:
             self.drive_vector[1] -= 1
         self.drive()
 
-k = keyTracker()
-listen_keyboard(on_press=k.press_callback,on_release=k.release_callback)
+if __name__ == '__main__':
+    k = keyTracker()
+    listen_keyboard(on_press=k.press_callback,on_release=k.release_callback)

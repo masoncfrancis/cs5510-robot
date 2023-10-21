@@ -3,18 +3,16 @@ import sys
 import time
 
 
-
-i = 0
-while True:
-    try:
-
+class Photographer:
+    i = 0
+    def takePicture(self):
         # Initialize the camera
         camera = cv2.VideoCapture(0)
         
         # Capture an image
         return_value, image = camera.read()
 
-        imgName = "outputImages/{:06d}.png".format(i)
+        imgName = "outputImages/{:06d}.png".format(self.i)
 
         # Save the image
         cv2.imwrite(imgName, image)
@@ -25,11 +23,11 @@ while True:
         camera.release()
 
         # increment the counter
-        i += 1
+        self.i += 1
 
-        # wait 10 seconds
-        time.sleep(2)
-    except KeyboardInterrupt:
-        print("Exiting...")
-        # Release the camera
-        sys.exit()
+        # # wait 10 seconds
+        # time.sleep(2)
+    # except KeyboardInterrupt:
+        # print("Exiting...")
+        # # Release the camera
+        # sys.exit()
