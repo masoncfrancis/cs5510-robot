@@ -61,7 +61,7 @@ def trackingSleep(sleepTime, FPS, pt, pg, drive_vector):
             print("Exiting...")
             # Release the camera
             sys.exit()
-    time.sleep(time.time() - entered - sleepTime)
+    time.sleep(sleepTime - (time.time() - entered))
     
     
 if __name__ == '__main__':
