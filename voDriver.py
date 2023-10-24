@@ -24,7 +24,7 @@ class PoseTracker:
     current_pose = [0, 0, 0, 0]
     last_update = time.time()
     
-    def __init__():
+    def __init__(self):
         f = open("poses/001.txt", "w")
         f.write("")
         f.close()
