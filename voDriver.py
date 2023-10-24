@@ -18,7 +18,7 @@ pause_time = 0.1
 class PoseTracker:
     ## Constant values
     speed = 0.1 #m/s
-    turn_speed = .5 #rad/s
+    turn_speed = .8 #rad/s
     
     #convention: [x_pos, y_pos, z_pos, yaw in rads]
     current_pose = [0, 0, 0, 0]
@@ -40,7 +40,7 @@ class PoseTracker:
         self.current_pose[2] += self.speed * delta_time * math.sin(self.current_pose[3]) * drive_vector[0]
         #z_pos assumed to not change
         
-        self.current_pose[3] -= self.turn_speed * delta_time * drive_vector[1]
+        self.current_pose[3] += self.turn_speed * delta_time * drive_vector[1]
     
     def writePose(self):
         f = open("poses/001.txt", "a")
