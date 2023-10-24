@@ -9,20 +9,26 @@ import sys
 
 max_fps = 20
 ## Constant values
-speed = 100
-drive_time = 2
-turn_time = .78
+speed = 50
+drive_time = 8
+turn_time = 1.5
 pause_time = 0.1
 
 
 class PoseTracker:
     ## Constant values
-    speed = 0.3 #m/s
-    turn_speed = 2 #rad/s
+    speed = 0.1 #m/s
+    turn_speed = .5 #rad/s
     
     #convention: [x_pos, y_pos, z_pos, yaw in rads]
     current_pose = [0, 0, 0, 0]
     last_update = time.time()
+    
+    def __init__():
+        f = open("poses/001.txt", "w")
+        f.write("")
+        f.close()
+
     
     def updatePose(self, drive_vector):
         delta_time = time.time() - self.last_update
@@ -34,7 +40,7 @@ class PoseTracker:
         self.current_pose[2] += self.speed * delta_time * math.sin(self.current_pose[3]) * drive_vector[0]
         #z_pos assumed to not change
         
-        self.current_pose[3] += self.turn_speed * delta_time * drive_vector[1]
+        self.current_pose[3] -= self.turn_speed * delta_time * drive_vector[1]
     
     def writePose(self):
         f = open("poses/001.txt", "a")
@@ -46,13 +52,13 @@ def trackingSleep(sleepTime, FPS, pt, pg, drive_vector):
     entered = time.time()
     last_frame = 0
     #assume it takes some amount of time to do the pose update and image writing
-    while (time.time() - entered) < (sleepTime - 0.25):
+    while (time.time() - entered) < (sleepTime - 0.15):
         try:
             
             if (time.time() - last_frame) > (1.0 / max_fps):
                 last_frame = time.time()
                 pt.updatePose(drive_vector)
-                print("Taking a picture!")
+                # print("Taking a picture!")
                 pg.takePicture()
                 pt.writePose()
                 
