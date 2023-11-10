@@ -164,5 +164,4 @@ log/
 .vscode/
 .idea/
 
-output/
 data.csv
