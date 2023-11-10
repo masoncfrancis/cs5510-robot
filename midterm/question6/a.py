@@ -1,8 +1,26 @@
 from fer import FER
 import cv2
+from fer.classes import Video
+from matplotlib import pyplot as plt
 
-img = cv2.imread("images/test.jpg")
+
+# Resources to learn how to write this code came from FER documentation and examples on GitHub
+
+def analyzeVideo(video: Video, detector: FER):
+    emotions = video.analyze(detector, display=False)
+
+    df = video.to_pandas(emotions)
+    df = video.get_first_face(df)
+    df = video.get_emotions(df)
+
+    df.plot()
+    plt.show()
+
+
+
 detector = FER()
-result = detector.detect_emotions(img)
+video1 = Video("assets/Video_One.mp4")
+video2 = Video("assets/Video_Two.mp4")
 
-print(result)
+analyzeVideo(video1, detector)
+analyzeVideo(video2, detector)
