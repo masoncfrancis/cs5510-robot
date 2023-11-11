@@ -28,4 +28,11 @@ test['Clean_Text'] = test['Clean_Text'].apply(nfx.remove_stopwords)
 x_test = test['Clean_Text']
 y_test = test['Emotion']
 
-print(pipe_lr.score(x_test,y_test))
+print("Accuracy score: " + str(pipe_lr.score(x_test,y_test)))
+
+analyze = pd.read_csv("kaggleData/val.txt", sep=";", names=columnNames)
+analyze['Clean_Text'] = analyze['Text'].apply(nfx.remove_userhandles)
+analyze['Clean_Text'] = analyze['Clean_Text'].apply(nfx.remove_stopwords)
+
+for i in range(len(analyze['Clean_Text'])):
+    print("Prediction: " + str(pipe_lr.predict([analyze['Clean_Text'][i]])) + ", Actual: " + analyze["Emotion"][i] + ", Text: " + analyze['Text'][i])
