@@ -5,8 +5,8 @@ from monovideoodometery import MonoVideoOdometery
 import os
 
 
-img_path = 'C:\\Users\\caleb\\Documents\\Fall2023\\CS5510\\Monocular-Video-Odometery\\images\\'
-pose_path = 'C:\\Users\\caleb\\Documents\\Fall2023\\CS5510\\Monocular-Video-Odometery\\poses\\001.txt'
+img_path = 'C:\\Users\\caleb\\Documents\\Fall2023\\CS5510\\cs5510-robot\\VisualOdometry\\images\\'
+pose_path = 'C:\\Users\\caleb\\Documents\\Fall2023\\CS5510\\cs5510-robot\\VisualOdometry\\poses\\001.txt'
 
 focal = 28.0 #718.8560
 pp = (607.1928, 185.2157)
