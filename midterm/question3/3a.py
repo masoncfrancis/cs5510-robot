@@ -1,3 +1,6 @@
+# The following code was generated with the help of ChatGPT and modified to run a simulation of a complete circle trace
+
+
 import math
 import matplotlib.pyplot as plt
 
@@ -22,9 +25,12 @@ trajectory_y = []
 angular_velocities = []
 
 # Simulation loop
-for _ in range(int(10 * freq)):  # Simulate for 10 seconds
+for _ in range(int(15 * freq)):  # Simulate for 15 seconds in order to complete a whole circle
     # Calculate Ackermann steering angle
     delta = math.atan(L / R)
+
+    # Print out the commands
+    print(f"Command: changeInSteeringAngle={delta}, distanceTravelledPerHalfSecond={V * dt}, changeInAngleOrientationPerHalfSecond={V * dt / R}")
 
     # Calculate displacement
     ds = V * dt
