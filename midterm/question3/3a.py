@@ -1,4 +1,4 @@
-# The following code was generated with the help of ChatGPT and modified to run a simulation of a complete circle trace
+# The following code was generated with the help of ChatGPT and modified by me to run a simulation of a complete circle trace
 
 
 import math
