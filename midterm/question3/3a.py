@@ -1,63 +1,67 @@
-import numpy as np
+import math
 import matplotlib.pyplot as plt
-import matplotlib as mpl
 
-class AckermannModel:
-   def __init__(self, wheelbase, trackwidth):
-       self.wheelbase = wheelbase
-       self.trackwidth = trackwidth
-       self.state = np.array([0, 0, 0, 0]) # [x, y, theta, psi]
+# Parameters
+L = 35.0  # Length of the firetruck
+W = 10.0  # Width of the firetruck
+V = 8.0   # Constant velocity
+R = 18.0  # Radius of the circle
+freq = 2.0  # Control frequency
+dt = 1.0 / freq  # Time for one control cycle
 
-   def step(self, v, psi_dot):
-       # Calculate the new state
-       x, y, theta, psi = self.state
-       dt = 1/2 # 2Hz
-       dx = v * np.cos(theta) * dt
-       dy = v * np.sin(theta) * dt
-       dtheta = v * np.tan(psi) / self.wheelbase * dt
-       dpsi = psi_dot * dt
+# Initial state
+x = 0.0
+y = 0.0
+theta = 0.0
 
-       # Update the state
-       self.state = np.array([x + dx, y + dy, theta + dtheta, psi + dpsi])
+# Lists to store data for plotting
+path_x = []
+path_y = []
+trajectory_x = []
+trajectory_y = []
+angular_velocities = []
 
-   def get_state(self):
-       return self.state
+# Simulation loop
+for _ in range(int(10 * freq)):  # Simulate for 10 seconds
+    # Calculate Ackermann steering angle
+    delta = math.atan(L / R)
 
-if __name__ == "__main__":
-    model = AckermannModel(10.668, 3.048)
+    # Calculate displacement
+    ds = V * dt
 
-    # mpl.use('TkAgg')
+    # Calculate change in orientation
+    dtheta = ds / R
 
-    radius = 18
-    velocity = 8
-    angular_velocity = velocity / radius
+    # Update robot's position and orientation
+    x += ds * math.cos(theta)
+    y += ds * math.sin(theta)
+    theta += dtheta
 
-    # Generate commands for 10 seconds
-    time = np.arange(0, 10, 0.05)
-    commands = angular_velocity * np.ones_like(time)
+    # Store data for plotting
+    path_x.append(x)
+    path_y.append(y)
+    trajectory_x.append(x)
+    trajectory_y.append(y)
+    angular_velocities.append(dtheta)
 
-    print(commands)
+# Plotting
+plt.figure(figsize=(10, 5))
+plt.subplot(1, 2, 1)
+plt.plot(path_x, path_y, label='Path')
+plt.title('Path')
+plt.xlabel('X (m)')
+plt.ylabel('Y (m)')
+plt.grid(True)
+plt.legend()
 
-    for t, command in zip(time, commands):
-        model.step(velocity, command)
+plt.subplot(1, 2, 2)
+plt.plot(trajectory_x, label='X')
+plt.plot(trajectory_y, label='Y')
+plt.plot(angular_velocities, label='Angular Velocity')
+plt.title('Trajectory')
+plt.xlabel('Time (s)')
+plt.ylabel('Values')
+plt.grid(True)
+plt.legend()
 
-    # Get the state
-    state = model.get_state()
-
-    # Plot the path
-    plt.figure()
-    plt.plot(state[0], state[1])
-    plt.title('Path')
-    plt.xlabel('x')
-    plt.ylabel('y')
-
-    # Plot the trajectory
-    plt.figure()
-    plt.plot(state[0], state[1], state[2])
-    plt.title('Trajectory')
-    plt.xlabel('x')
-    plt.ylabel('y')
-
-    plt.show(block=True)
-
-
+plt.show()
