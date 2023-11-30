@@ -5,23 +5,8 @@ def generate_launch_description():
     return LaunchDescription([
         Node(
             package='attempt1',
-            executable='sonar',
-            name='sonar_node',
-        ),
-        Node(
-            package='attempt1',
-            executable='motors',
-            name='motors_node',
-        ),
-        Node(
-            package='attempt1',
-            executable='move',
-            name='move_node',
-        ),
-        Node(
-            package='attempt1',
-            executable='locate',
-            name='locate_node',
+            executable='save',
+            name='img_save_node',
         ),
         Node(
             package='v4l2_camera',

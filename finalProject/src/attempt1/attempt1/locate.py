@@ -5,6 +5,7 @@ from rclpy.node import Node
 from cv_bridge import CvBridge
 from sensor_msgs.msg import Image
 from std_msgs.msg import Bool, Int32MultiArray
+from pyimagesearch.shapedetector import ShapeDetector  # Import the ShapeDetector class
 
 class LocateNode(Node):
     def __init__(self):
@@ -16,6 +17,9 @@ class LocateNode(Node):
         self.ball_info_publisher = self.create_publisher(
             Int32MultiArray, 'ball_info', 10)
         self.cv_bridge = CvBridge()
+
+        # Create an instance of the ShapeDetector class
+        self.shape_detector = ShapeDetector()
 
     def image_callback(self, msg):
         # Convert ROS Image message to OpenCV image
@@ -53,42 +57,46 @@ class LocateNode(Node):
         # Create a mask using the color range
         color_mask = cv2.inRange(hsv_image, lower_color_range, upper_color_range)
 
-        # Find contours in the mask
+        # Find contours in the color mask
         contours, _ = cv2.findContours(
             color_mask, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
 
         is_ball = False
-        ball_info = [0, 0, 0] # Default coordinates and distance if the ball is not found
+        ball_info = [0, 0, 0]  # Default coordinates and distance if the ball is not found
 
         if contours:
             # Assume the largest contour is the ball
             largest_contour = max(contours, key=cv2.contourArea)
 
-            # Get the bounding box of the contour
-            x, y, w, h = cv2.boundingRect(largest_contour)
+            # Use the ShapeDetector to detect if the contour is a circle
+            shape = self.shape_detector.detect(largest_contour)
 
-            # Calculate the center of the bounding box
-            center_x = x + w // 2
-            center_y = y + h // 2
+            if shape == "circle":
+                # Get the bounding box of the contour
+                x, y, w, h = cv2.boundingRect(largest_contour)
 
-            # Convert pixel coordinates to real-world coordinates
-            pixel_coordinates = np.array(
-                [[center_x, center_y]], dtype=np.float32).reshape(-1, 1, 2)
-            undistorted_coordinates = cv2.undistortPoints(
-                pixel_coordinates, mtx, dist, P=mtx)
+                # Calculate the center of the bounding box
+                center_x = x + w // 2
+                center_y = y + h // 2
 
-            # Extract undistorted coordinates
-            center_x_true, center_y_true = undistorted_coordinates[0][0]
-            center_x_true = int(center_x_true)
-            center_y_true = int(center_y_true)
+                # Convert pixel coordinates to real-world coordinates
+                pixel_coordinates = np.array(
+                    [[center_x, center_y]], dtype=np.float32).reshape(-1, 1, 2)
+                undistorted_coordinates = cv2.undistortPoints(
+                    pixel_coordinates, mtx, dist, P=mtx)
 
-            # Distance to the ball (simple conversion)
-            distance_to_ball = int(np.sqrt(
-                (center_x_true - mtx[0, 2])**2 + (center_y_true - mtx[1,2])**2
-            ))
+                # Extract undistorted coordinates
+                center_x_true, center_y_true = undistorted_coordinates[0][0]
+                center_x_true = int(center_x_true)
+                center_y_true = int(center_y_true)
 
-            is_ball = True
-            ball_info = [center_x_true, center_y_true, distance_to_ball]
+                # Distance to the ball (simple conversion)
+                distance_to_ball = int(np.sqrt(
+                    (center_x_true - mtx[0, 2])**2 + (center_y_true - mtx[1, 2])**2
+                ))
+
+                is_ball = True
+                ball_info = [center_x_true, center_y_true, distance_to_ball]
 
         return is_ball, ball_info
 

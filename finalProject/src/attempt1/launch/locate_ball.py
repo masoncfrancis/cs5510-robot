@@ -5,21 +5,6 @@ def generate_launch_description():
     return LaunchDescription([
         Node(
             package='attempt1',
-            executable='sonar',
-            name='sonar_node',
-        ),
-        Node(
-            package='attempt1',
-            executable='motors',
-            name='motors_node',
-        ),
-        Node(
-            package='attempt1',
-            executable='move',
-            name='move_node',
-        ),
-        Node(
-            package='attempt1',
             executable='locate',
             name='locate_node',
         ),

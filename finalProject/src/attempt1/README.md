@@ -7,5 +7,6 @@ the project doesn't need any dependencies other than those needed for Taylor's g
 
 To run everything. Run the following commands from the src folder:
 1. `colcon build`
-2. `cp -r attempt1/launch/ install/attempt1/share/attempt1/launch/`
-3. `ros2 launch attempt1 launch.py`
+2. `. install/setup.sh`
+3. `cp -r attempt1/launch/ install/attempt1/share/attempt1/launch/`
+4. `ros2 launch attempt1 launch.py`

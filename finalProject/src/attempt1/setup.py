@@ -26,6 +26,7 @@ setup(
             'camera = attempt1.camera:main',
             'locate = attempt1.locate:main',
             'move = attempt1.move:main',
+            'save = attempt1.save:main'
         ],
     },
 )
