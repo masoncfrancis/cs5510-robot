@@ -3,10 +3,10 @@ import cv2
 import numpy as np
 
 # Define the size of the calibration pattern (e.g., chessboard)
-pattern_size = (8, 8)  # Adjust based on your calibration pattern
+pattern_size = (4, 5)  # Adjust based on your calibration pattern
 
 # Set termination criteria for the corner subpixel refinement
-criteria = (cv2.TERM_CRITERIA_EPS + cv2.TERM_CRITERIA_MAX_ITER, 30, 0.001)
+criteria = (cv2.TERM_CRITERIA_EPS + cv2.TERM_CRITERIA_MAX_ITER, 50, 0.1)
 
 # Arrays to store object points and image points from all the calibration images
 objpoints = []  # 3D points in real-world space
@@ -18,14 +18,17 @@ objp[:, :2] = np.mgrid[0:pattern_size[0], 0:pattern_size[1]].T.reshape(-1, 2)
 
 # Capture images for calibration
 # Replace 'your_image_folder' with the actual path to your image folder
-image_folder = os.path.join(os.getcwd(), 'img')
-image_files = ['image1.jpg', 'image2.jpg', 'image3.jpg']  # Change to real names after 
+# image_folder = os.path.join(os.getcwd(), 'img')
+image_folder = 'img'
+image_files = [f'image_{i}.jpg' for i in range(500, 520)]  # Change to real names after 
 
 for image_file in image_files:
     # Read the image
     img = cv2.imread(image_folder + '/' + image_file)
     gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
 
+    if not img.any():
+        print("Image not found")
     # Find chessboard corners
     ret, corners = cv2.findChessboardCorners(gray, pattern_size, None)
 
@@ -39,6 +42,8 @@ for image_file in image_files:
         img = cv2.drawChessboardCorners(img, pattern_size, corners, ret)
         cv2.imshow('Chessboard Corners', img)
         cv2.waitKey(500)  # Adjust the wait time as needed
+    else:
+        print("No corners found")
 
 cv2.destroyAllWindows()
 
@@ -54,7 +59,7 @@ print("\nDistortion Coefficients:")
 print(dist)
 
 # Compute extrinsic parameters for a specific image
-image_index = 0  # Adjust based on the image you want to use for computing extrinsic parameters
+image_index = 5  # Adjust based on the image you want to use for computing extrinsic parameters
 rvec, tvec = rvecs[image_index], tvecs[image_index]
 
 # Transformation matrix (rotation and translation)

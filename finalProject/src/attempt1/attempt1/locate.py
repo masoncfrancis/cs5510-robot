@@ -5,7 +5,36 @@ from rclpy.node import Node
 from cv_bridge import CvBridge
 from sensor_msgs.msg import Image
 from std_msgs.msg import Bool, Int32MultiArray
-from pyimagesearch.shapedetector import ShapeDetector  # Import the ShapeDetector class
+
+class ShapeDetector:
+	def __init__(self):
+		pass
+	def detect(self, c):
+		# initialize the shape name and approximate the contour
+		shape = "unidentified"
+		peri = cv2.arcLength(c, True)
+		approx = cv2.approxPolyDP(c, 0.04 * peri, True)
+		# if the shape is a triangle, it will have 3 vertices
+		if len(approx) == 3:
+			shape = "triangle"
+		# if the shape has 4 vertices, it is either a square or
+		# a rectangle
+		elif len(approx) == 4:
+			# compute the bounding box of the contour and use the
+			# bounding box to compute the aspect ratio
+			(x, y, w, h) = cv2.boundingRect(approx)
+			ar = w / float(h)
+			# a square will have an aspect ratio that is approximately
+			# equal to one, otherwise, the shape is a rectangle
+			shape = "square" if ar >= 0.95 and ar <= 1.05 else "rectangle"
+		# if the shape is a pentagon, it will have 5 vertices
+		elif len(approx) == 5:
+			shape = "pentagon"
+		# otherwise, we assume the shape is a circle
+		else:
+			shape = "circle"
+		# return the name of the shape
+		return shape
 
 class LocateNode(Node):
     def __init__(self):
@@ -39,9 +68,19 @@ class LocateNode(Node):
     def detect_ball(self, cv_image):
         # Camera intrinsic parameters from calibration
         mtx = np.array([[675.93879896, 0.0, 991.0434498],
-                        [0.0, 678.36517214, 555.23630622],
-                        [0.0, 0.0, 1.0]])
+            [0.0, 678.36517214, 555.23630622],
+            [0.0, 0.0, 1.0]])
         dist = np.array([[-0.02077507, 0.0199203, 0.00048656, -0.00125545, -0.0201533]])
+
+        # mtx = np.array([[1.51424068e+03, 0.0, 3.19650358e+02],
+        #     [0.0, 1.55503723e+03, 2.39353296e+02],
+        #     [0.0, 0.0, 1.0]])
+        # dist = np.array([[ 2.21471857, -6.82352846e+02,  3.00306827e-02,  5.24950588e-02, -3.24969429]])
+
+        transformation_matrix = np.array([[-9.96183603e-01, 7.49769589e-02, 4.46842867e-02, 3.12709637e+00],
+            [-8.27532785e-02,-9.74104116e-01,-2.10411657e-01, 4.19386410e-01],
+            [ 2.77511215e-02,-2.13306414e-01, 9.76591137e-01, 7.50657062e+01],
+            [ 0.0, 0.0, 0.0, 1.0]])
 
         # Undistort the image using calibration parameters
         undistorted_image = cv2.undistort(cv_image, mtx, dist, None, mtx)
@@ -71,7 +110,8 @@ class LocateNode(Node):
             # Use the ShapeDetector to detect if the contour is a circle
             shape = self.shape_detector.detect(largest_contour)
 
-            if shape == "circle":
+            # if shape == "circle":
+            if shape:
                 # Get the bounding box of the contour
                 x, y, w, h = cv2.boundingRect(largest_contour)
 
@@ -95,8 +135,14 @@ class LocateNode(Node):
                     (center_x_true - mtx[0, 2])**2 + (center_y_true - mtx[1, 2])**2
                 ))
 
+                # Transform pixel coordinates to 3D coordinates
+                h_pixel_coordinates = np.array([center_x_true, center_y_true, 1])
+                h_robot_coordinates = np.dot(transformation_matrix, h_pixel_coordinates)
+                robot_coordinates = h_robot_coordinates[:3]
+
                 is_ball = True
                 ball_info = [center_x_true, center_y_true, distance_to_ball]
+                # ball_info = [int(robot_coordinates[0]), int(robot_coordinates[1]), int(robot_coordinates[2])]
 
         return is_ball, ball_info
 

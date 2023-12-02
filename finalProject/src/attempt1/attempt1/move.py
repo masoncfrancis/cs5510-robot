@@ -19,6 +19,9 @@ class MoveNode(Node):
         )
         self.dist = -1
         self.ball_data = [0,0,0]
+        self.seen_ball = False
+        self.ball_dist = -1
+        self.last_ball_loc = 0
 
     def sonar_callback(self, msg):
         self.dist = msg.range
@@ -30,17 +33,32 @@ class MoveNode(Node):
 
     def move_to_ball(self):
         msg = Int32MultiArray()
-
-        if self.dist != -1 and self.ball_data[2] != 0:
-            if self.ball_data[0] > 400:
+        self.ball_dist = self.dist
+        self.seen_ball = True
+        self.last_ball_loc = self.ball_data[0]
+        
+        if self.dist != -1 and self.ball_data[2] != 0: ## If we see the ball
+            if self.last_ball_loc > 450: # The ball is to the left of us
                 msg.data = [50,0]
-            elif self.ball_data[0] < 270:
+            elif self.last_ball_loc < 240: # The ball is to the right of us
                 msg.data = [0,50]
-            else:
+            else: # The ball is centered
                 if self.dist > 0.05:
                     msg.data = [50,50]
                 else:
                     msg.data = [0,0]
+        elif self.seen_ball: # If we don't see the ball, but we have before
+            if self.last_ball_loc > 450: # If we saw it to the left of us
+                msg.data = [0,50]
+            elif self.last_ball_loc < 240: # If we saw it to the right of us
+                msg.data = [50,0]
+            else: # If we saw it right in front of us
+                if self.dist > 0.05: # Assume it's just below the camera, and move to touch it
+                    msg.data = [50,50]
+                else:
+                    msg.data = [0,0]
+
+
         else:
             msg.data = [0,0]
 
