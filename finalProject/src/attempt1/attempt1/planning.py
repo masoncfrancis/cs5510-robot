@@ -1,6 +1,7 @@
 import rclpy
 from rclpy.node import Node
 from std_msgs.msg import Int32MultiArray
+from astar import astar
 import numpy as np
 
 class MotionPlanningNode(Node):
@@ -69,28 +70,30 @@ class MotionPlanningNode(Node):
         grid_size = 100
         self.robot_position = (grid_size // 2, grid_size // 2)
 
-        # Create a simple path by moving towards the target position while avoiding occupied cells
-        path = [self.robot_position]
+        return astar(occupancy_grid, self.robot_position, target_position, True)
 
-        current_position = self.robot_position
+        # # Create a simple path by moving towards the target position while avoiding occupied cells
+        # path = [self.robot_position]
 
-        while current_position != target_position:
-            x, y = current_position
-            target_x, target_y = target_position
+        # current_position = self.robot_position
 
-            # Move towards the target position while avoiding occupied cells
-            if x < target_x and occupancy_grid[y, x + 1] == 0:
-                current_position = (x + 1, y)
-            elif x > target_x and occupancy_grid[y, x - 1] == 0:
-                current_position = (x - 1, y)
-            elif y < target_y and occupancy_grid[y + 1, x] == 0:
-                current_position = (x, y + 1)
-            elif y > target_y and occupancy_grid[y - 1, x] == 0:
-                current_position = (x, y - 1)
+        # while current_position != target_position:
+        #     x, y = current_position
+        #     target_x, target_y = target_position
 
-            path.append(current_position)
+        #     # Move towards the target position while avoiding occupied cells
+        #     if x < target_x and occupancy_grid[y, x + 1] == 0:
+        #         current_position = (x + 1, y)
+        #     elif x > target_x and occupancy_grid[y, x - 1] == 0:
+        #         current_position = (x - 1, y)
+        #     elif y < target_y and occupancy_grid[y + 1, x] == 0:
+        #         current_position = (x, y + 1)
+        #     elif y > target_y and occupancy_grid[y - 1, x] == 0:
+        #         current_position = (x, y - 1)
 
-        return path
+        #     path.append(current_position)
+
+        # return path
 
     def execute_path(self, path):
         # Execute the planned path by publishing motor control commands
