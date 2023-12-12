@@ -1,0 +1,354 @@
+detect: weights=['yolov5s.pt'], source=toystore/*.jpg, data=yolov5/data/coco128.yaml, imgsz=[640, 640], conf_thres=0.25, iou_thres=0.45, max_det=1000, device=, view_img=False, save_txt=False, save_csv=False, save_conf=False, save_crop=False, nosave=False, classes=None, agnostic_nms=False, augment=False, visualize=False, update=False, project=yolov5/runs/detect, name=exp, exist_ok=False, line_thickness=3, hide_labels=False, hide_conf=False, half=False, dnn=False, vid_stride=1
+YOLOv5 🚀 v7.0-249-gf400bba Python-3.11.2 torch-2.1.1 CPU
+
+Fusing layers... 
+YOLOv5s summary: 213 layers, 7225885 parameters, 0 gradients, 16.4 GFLOPs
+image 1/347 /home/mason/toystore/0797089377f6f45f3278042aa1d0631d.jpg: 512x640 1 book, 1806.7ms
+image 2/347 /home/mason/toystore/109_0940.jpg: 640x640 1 person, 1 clock, 2125.0ms
+image 3/347 /home/mason/toystore/114.jpg: 480x640 2 books, 2 clocks, 1606.5ms
+image 4/347 /home/mason/toystore/1164876979_0.jpg: 544x640 (no detections), 1795.4ms
+image 5/347 /home/mason/toystore/1179833350_ee00fb9367.jpg: 640x640 1 bottle, 9 teddy bears, 2107.6ms
+image 6/347 /home/mason/toystore/12.jpg: 480x640 (no detections), 1598.7ms
+image 7/347 /home/mason/toystore/1486958865_ba21d9acab.jpg: 640x640 1 person, 2 traffic lights, 9 books, 2085.8ms
+image 8/347 /home/mason/toystore/1529445456_acec85121f.jpg: 640x640 3 persons, 4 teddy bears, 2088.0ms
+image 9/347 /home/mason/toystore/165.jpg: 480x640 1 person, 1 clock, 1565.5ms
+image 10/347 /home/mason/toystore/177.jpg: 480x640 1 chair, 1 book, 4 clocks, 1 vase, 1578.6ms
+image 11/347 /home/mason/toystore/20070828052224875.jpg: 640x640 3 persons, 1 cake, 2086.2ms
+image 12/347 /home/mason/toystore/213289035_28528f86e0.jpg: 640x640 (no detections), 2079.5ms
+image 13/347 /home/mason/toystore/2406613103_e9ee362f6c.jpg: 480x640 4 handbags, 1 teddy bear, 1574.9ms
+image 14/347 /home/mason/toystore/2406613109_79a9a378ff.jpg: 480x640 1 cup, 1 chair, 1 teddy bear, 1607.9ms
+image 15/347 /home/mason/toystore/245006402_b27063dfcd.jpg: 640x640 4 persons, 2 tvs, 2089.7ms
+image 16/347 /home/mason/toystore/250507130dh3.jpg: 640x640 3 cars, 4 buss, 6 trucks, 3 suitcases, 2085.1ms
+image 17/347 /home/mason/toystore/2610497_164b173c1b.jpg: 640x640 1 person, 2090.1ms
+image 18/347 /home/mason/toystore/262507104_bfa08ef897.jpg: 640x640 5 persons, 1 bench, 1 bottle, 1 couch, 2090.2ms
+image 19/347 /home/mason/toystore/262507231_b0203fd5aa.jpg: 640x640 1 book, 2086.3ms
+image 20/347 /home/mason/toystore/262508526_93634b3c2c.jpg: 640x640 1 person, 1 chair, 2090.8ms
+image 21/347 /home/mason/toystore/281568964_bb524a3c9e_o.jpg: 448x640 2 persons, 1 truck, 1523.5ms
+image 22/347 /home/mason/toystore/2863560_5e41fa6652.jpg: 640x640 7 persons, 1 elephant, 2082.8ms
+image 23/347 /home/mason/toystore/286605441_d9919621ce.jpg: 640x640 1 book, 2084.3ms
+image 24/347 /home/mason/toystore/299724113_39b3a2b7f8.jpg: 640x640 2 sports balls, 2089.9ms
+image 25/347 /home/mason/toystore/305015506_6df5016b5c.jpg: 640x640 (no detections), 2099.0ms
+image 26/347 /home/mason/toystore/322626923_b365feb0e6.jpg: 640x640 3 persons, 1 kite, 4 books, 2118.7ms
+image 27/347 /home/mason/toystore/322627515_6a6372d7a5.jpg: 640x640 2 books, 2075.5ms
+image 28/347 /home/mason/toystore/42599209_9be8f72d18.jpg: 640x640 6 persons, 1 handbag, 1 suitcase, 3 teddy bears, 2072.1ms
+image 29/347 /home/mason/toystore/5.jpg: 640x640 1 truck, 2077.4ms
+image 30/347 /home/mason/toystore/50224341945f7e87bd1af8.jpg: 640x640 2 persons, 1 tv, 2080.2ms
+image 31/347 /home/mason/toystore/59516206_45f74119d6.jpg: 640x640 1 person, 2068.0ms
+image 32/347 /home/mason/toystore/7.jpg: 640x640 3 books, 2077.6ms
+image 33/347 /home/mason/toystore/CIMG0305.jpg: 640x640 2 persons, 1 stop sign, 4 skateboards, 2093.6ms
+image 34/347 /home/mason/toystore/CIMG3313.jpg: 640x480 5 books, 1639.8ms
+image 35/347 /home/mason/toystore/IMG_0198_Asakusa_toy_store.jpg: 640x640 (no detections), 2150.0ms
+image 36/347 /home/mason/toystore/IMG_2603.jpg: 640x640 3 persons, 1 motorcycle, 1 tie, 2097.2ms
+image 37/347 /home/mason/toystore/Image13852843.jpg: 640x480 1 book, 2 teddy bears, 1662.5ms
+image 38/347 /home/mason/toystore/Image75.jpg: 480x640 2 persons, 1 handbag, 1640.5ms
+image 39/347 /home/mason/toystore/Image_803_.jpg: 480x640 5 persons, 1 handbag, 1 teddy bear, 1651.4ms
+image 40/347 /home/mason/toystore/InsideofStore.jpg: 640x640 1 bottle, 2125.8ms
+image 41/347 /home/mason/toystore/JapaneseToyStore_1200W.jpg: 640x640 (no detections), 2087.4ms
+image 42/347 /home/mason/toystore/KING_JOUET_5_2_6a484.jpg: 480x640 1 person, 1663.4ms
+image 43/347 /home/mason/toystore/Milliwiggins_003.jpg: 640x640 1 giraffe, 4 books, 2116.7ms
+image 44/347 /home/mason/toystore/P1020153.jpg: 640x640 4 persons, 1 car, 1 potted plant, 3 teddy bears, 2096.1ms
+image 45/347 /home/mason/toystore/PICT0004_png.jpg: 480x640 1 toilet, 1663.8ms
+image 46/347 /home/mason/toystore/PICT0009.jpg: 640x480 1 potted plant, 3 books, 4 teddy bears, 1656.7ms
+image 47/347 /home/mason/toystore/Peluqueria_043.jpg: 480x640 1 person, 1 teddy bear, 1614.0ms
+image 48/347 /home/mason/toystore/QuienesSomos.jpg: 448x640 6 persons, 1 clock, 1575.5ms
+image 49/347 /home/mason/toystore/RESIDENCIA_008.jpg: 480x640 4 chairs, 3 books, 1635.5ms
+image 50/347 /home/mason/toystore/SANY0070.jpg: 480x640 3 persons, 1 car, 9 teddy bears, 1636.4ms
+image 51/347 /home/mason/toystore/STG57558.jpg: 480x640 4 books, 13 teddy bears, 1653.9ms
+image 52/347 /home/mason/toystore/Spielzeug_02_13_yahoo.jpg: 640x480 13 persons, 1 suitcase, 2 books, 1 clock, 1635.6ms
+image 53/347 /home/mason/toystore/Spielzeug_04_06_yahoo.jpg: 448x640 1 person, 2 bowls, 2 chairs, 1 oven, 1 sink, 1546.3ms
+image 54/347 /home/mason/toystore/Spielzeug_04_07_yahoo.jpg: 448x640 2 persons, 2 handbags, 1559.9ms
+image 55/347 /home/mason/toystore/Spielzeug_05_06_yahoo.jpg: 448x640 5 persons, 2 cats, 2 dogs, 2 horses, 1 bear, 1 bottle, 1 chair, 1550.4ms
+image 56/347 /home/mason/toystore/Spielzeug_101_24_flickr.jpg: 640x544 (no detections), 1830.1ms
+image 57/347 /home/mason/toystore/Spielzeug_11_18_yahoo.jpg: 480x640 3 persons, 1 suitcase, 1 bottle, 1 dining table, 1623.0ms
+image 58/347 /home/mason/toystore/Spielzeug_123_17_flickr.jpg: 480x640 3 books, 1637.2ms
+image 59/347 /home/mason/toystore/Spielzeug_12_23_flickr.jpg: 480x640 1 person, 1 laptop, 3 books, 1640.6ms
+image 60/347 /home/mason/toystore/Spielzeug_13_18_flickr.jpg: 480x640 3 persons, 1640.0ms
+image 61/347 /home/mason/toystore/Spielzeug_145_06_flickr.jpg: 640x480 1 sink, 1643.2ms
+image 62/347 /home/mason/toystore/Spielzeug_145_12_flickr.jpg: 640x480 1 person, 1643.3ms
+image 63/347 /home/mason/toystore/Spielzeug_147_08_flickr.jpg: 480x640 1 person, 1649.0ms
+image 64/347 /home/mason/toystore/Spielzeug_147_10_flickr.jpg: 480x640 1 chair, 2 clocks, 1651.5ms
+image 65/347 /home/mason/toystore/Spielzeug_14_02_flickr.jpg: 480x640 4 handbags, 1 teddy bear, 1641.4ms
+image 66/347 /home/mason/toystore/Spielzeug_14_08_yahoo.jpg: 448x640 1 person, 1546.8ms
+image 67/347 /home/mason/toystore/Spielzeug_14_21_flickr.jpg: 480x640 8 persons, 1648.2ms
+image 68/347 /home/mason/toystore/Spielzeug_150_02_flickr.jpg: 480x640 2 cakes, 1646.0ms
+image 69/347 /home/mason/toystore/Spielzeug_150_18_flickr.jpg: 640x480 5 bottles, 1642.1ms
+image 70/347 /home/mason/toystore/Spielzeug_152_01_flickr.jpg: 480x640 1 person, 1 suitcase, 1 chair, 1 sink, 3 books, 1649.8ms
+image 71/347 /home/mason/toystore/Spielzeug_15_13_yahoo.jpg: 640x512 1 train, 1740.4ms
+image 72/347 /home/mason/toystore/Spielzeug_163_23_flickr.jpg: 480x640 1 chair, 2 books, 1630.8ms
+image 73/347 /home/mason/toystore/Spielzeug_167_11_flickr.jpg: 480x640 1 person, 4 cups, 1 chair, 1647.9ms
+image 74/347 /home/mason/toystore/Spielzeug_168_24_flickr.jpg: 480x640 1 person, 1 chair, 1 potted plant, 1 book, 1651.4ms
+image 75/347 /home/mason/toystore/Spielzeug_18_01_flickr.jpg: 448x640 14 persons, 1 tie, 2 bowls, 6 teddy bears, 1558.8ms
+image 76/347 /home/mason/toystore/Spielzeug_19_20_altavista.jpg: 480x640 3 persons, 2 teddy bears, 1645.8ms
+image 77/347 /home/mason/toystore/Spielzeug_21_21_flickr.jpg: 480x640 17 persons, 4 chairs, 1634.1ms
+image 78/347 /home/mason/toystore/Spielzeug_22_08_yahoo.jpg: 448x640 12 persons, 1549.2ms
+image 79/347 /home/mason/toystore/Spielzeug_24_11_altavista.jpg: 448x640 1 truck, 1552.5ms
+image 80/347 /home/mason/toystore/Spielzeug_25_14_yahoo.jpg: 448x640 3 persons, 1 teddy bear, 1554.7ms
+image 81/347 /home/mason/toystore/Spielzeug_26_24_flickr.jpg: 480x640 11 persons, 1642.7ms
+image 82/347 /home/mason/toystore/Spielzeug_28_23_flickr.jpg: 480x640 (no detections), 1647.8ms
+image 83/347 /home/mason/toystore/Spielzeug_29_02_flickr.jpg: 480x640 (no detections), 1661.1ms
+image 84/347 /home/mason/toystore/Spielzeug_29_08_flickr.jpg: 480x640 9 persons, 1639.7ms
+image 85/347 /home/mason/toystore/Spielzeug_31_06_yahoo.jpg: 480x640 5 persons, 1 car, 1 backpack, 2 chairs, 1643.7ms
+image 86/347 /home/mason/toystore/Spielzeug_31_19_flickr.jpg: 480x640 9 persons, 1 cell phone, 1651.7ms
+image 87/347 /home/mason/toystore/Spielzeug_32_14_flickr.jpg: 480x640 4 persons, 1649.3ms
+image 88/347 /home/mason/toystore/Spielzeug_35_09_flickr.jpg: 640x480 7 persons, 1 chair, 1644.9ms
+image 89/347 /home/mason/toystore/Spielzeug_35_10_yahoo.jpg: 480x640 1 person, 4 teddy bears, 1654.0ms
+image 90/347 /home/mason/toystore/Spielzeug_41_05_flickr.jpg: 480x640 1 teddy bear, 1642.5ms
+image 91/347 /home/mason/toystore/Spielzeug_41_09_flickr.jpg: 480x640 1 person, 1642.4ms
+image 92/347 /home/mason/toystore/Spielzeug_41_18_yahoo.jpg: 512x640 11 persons, 1 teddy bear, 1743.3ms
+image 93/347 /home/mason/toystore/Spielzeug_48_19_yahoo.jpg: 640x480 7 persons, 1637.1ms
+image 94/347 /home/mason/toystore/Spielzeug_50_15_flickr.jpg: 480x640 16 persons, 1 bowl, 1 dining table, 1640.6ms
+image 95/347 /home/mason/toystore/Spielzeug_56_08_flickr.jpg: 480x640 12 persons, 1 dog, 1 cell phone, 1650.0ms
+image 96/347 /home/mason/toystore/Spielzeug_56_09_flickr.jpg: 480x640 8 persons, 5 chairs, 1 dining table, 1642.7ms
+image 97/347 /home/mason/toystore/Spielzeug_58_01_flickr.jpg: 480x640 14 persons, 2 tvs, 1646.4ms
+image 98/347 /home/mason/toystore/Spielzeug_62_10_flickr.jpg: 480x640 15 persons, 1 backpack, 1 bottle, 1 dining table, 1640.0ms
+image 99/347 /home/mason/toystore/Spielzeug_62_21_flickr.jpg: 480x640 11 persons, 1645.2ms
+image 100/347 /home/mason/toystore/Spielzeug_70_20_flickr.jpg: 448x640 1 person, 1 book, 1548.4ms
+image 101/347 /home/mason/toystore/Spielzeug_75_04_flickr.jpg: 480x640 1 person, 1 vase, 3 teddy bears, 1646.1ms
+image 102/347 /home/mason/toystore/Spielzeug_83_03_flickr.jpg: 480x640 2 persons, 1643.9ms
+image 103/347 /home/mason/toystore/Spielzeug_84_23_flickr.jpg: 480x640 18 persons, 2 cars, 2 trucks, 2078.2ms
+image 104/347 /home/mason/toystore/Spielzeug_85_23_flickr.jpg: 480x640 7 persons, 3 cars, 1 motorcycle, 1 bus, 1 train, 1 traffic light, 3 chairs, 2046.4ms
+image 105/347 /home/mason/toystore/Spielzeug_87_07_flickr.jpg: 448x640 3 persons, 1 dog, 2 elephants, 1553.3ms
+image 106/347 /home/mason/toystore/ToyStoreLg.jpg: 640x640 2 persons, 6 books, 2123.9ms
+image 107/347 /home/mason/toystore/UMW_Rummage_Before_Boutique_with_dolls_780356.jpg: 640x640 1 car, 2 teddy bears, 2109.7ms
+image 108/347 /home/mason/toystore/Zona_juguetes.jpg: 480x640 3 motorcycles, 1648.5ms
+image 109/347 /home/mason/toystore/a1_toystore1.jpg: 640x640 (no detections), 2136.4ms
+image 110/347 /home/mason/toystore/a1_toystore2.jpg: 640x640 1 suitcase, 2111.9ms
+image 111/347 /home/mason/toystore/a1_toystore3.jpg: 640x640 1 umbrella, 2107.1ms
+image 112/347 /home/mason/toystore/b1852.jpg: 640x640 2 teddy bears, 2089.1ms
+image 113/347 /home/mason/toystore/com0407_SSALUD.jpg: 448x640 3 persons, 1 bicycle, 2 umbrellas, 8 books, 1586.1ms
+image 114/347 /home/mason/toystore/company02.jpg: 640x640 1 book, 2 teddy bears, 2121.7ms
+image 115/347 /home/mason/toystore/d4k_002.jpg: 640x640 1 giraffe, 1 snowboard, 2152.4ms
+image 116/347 /home/mason/toystore/d4k_004.jpg: 640x640 9 books, 2 teddy bears, 2124.8ms
+image 117/347 /home/mason/toystore/d4k_006.jpg: 640x640 2 bottles, 6 teddy bears, 2117.0ms
+image 118/347 /home/mason/toystore/d4k_007.jpg: 640x640 (no detections), 2138.1ms
+image 119/347 /home/mason/toystore/dscf0478172.jpg: 640x480 1 bottle, 1 clock, 1629.9ms
+image 120/347 /home/mason/toystore/eurekakids_tienda_2.jpg: 512x640 1 banana, 3 books, 1727.1ms
+image 121/347 /home/mason/toystore/foto_minori_per_museo_dreoni_2.jpg: 480x640 1 cup, 2 books, 1 vase, 1653.1ms
+image 122/347 /home/mason/toystore/fotonuoven80_122.jpg: 640x480 3 books, 1672.2ms
+image 123/347 /home/mason/toystore/giocattolo_09_07_flickr.jpg: 640x480 3 persons, 3 handbags, 1639.9ms
+image 124/347 /home/mason/toystore/giocattolo_12_13_altavista.jpg: 448x640 3 persons, 1 book, 1558.5ms
+image 125/347 /home/mason/toystore/giocattolo_32_19_altavista.jpg: 512x640 5 persons, 2 airplanes, 2 handbags, 1 suitcase, 1744.6ms
+image 126/347 /home/mason/toystore/giocattolo_49_02_flickr.jpg: 480x640 2 persons, 1 bowl, 1624.6ms
+image 127/347 /home/mason/toystore/giocattolo_52_03_flickr.jpg: 480x640 (no detections), 1635.6ms
+image 128/347 /home/mason/toystore/giocattolo_57_16_flickr.jpg: 480x640 1 book, 1654.6ms
+image 129/347 /home/mason/toystore/giocattolo_57_19_flickr.jpg: 480x640 (no detections), 1641.8ms
+image 130/347 /home/mason/toystore/gs_toyrm_lg.jpg: 640x640 1 chair, 1 couch, 9 books, 2115.3ms
+image 131/347 /home/mason/toystore/gs_toys_lg.jpg: 640x640 1 umbrella, 2 books, 2135.3ms
+image 132/347 /home/mason/toystore/gs_ty_lg.jpg: 640x640 8 teddy bears, 2125.4ms
+image 133/347 /home/mason/toystore/hracka_01_21_flickr.jpg: 480x640 2 persons, 1 book, 3 clocks, 1649.1ms
+image 134/347 /home/mason/toystore/hracka_04_11_yahoo.jpg: 480x640 1 chair, 1648.2ms
+image 135/347 /home/mason/toystore/im001031.jpg: 640x480 (no detections), 1645.8ms
+image 136/347 /home/mason/toystore/im001034.jpg: 480x640 4 books, 1645.2ms
+image 137/347 /home/mason/toystore/img_29916_t.jpg: 640x640 1 clock, 2134.0ms
+image 138/347 /home/mason/toystore/imgp0927web.jpg: 640x640 1 person, 1 clock, 16 teddy bears, 2114.8ms
+image 139/347 /home/mason/toystore/jouets3.jpg: 640x640 9 teddy bears, 2131.7ms
+image 140/347 /home/mason/toystore/jouets5.jpg: 640x640 1 person, 1 bird, 2119.2ms
+image 141/347 /home/mason/toystore/juguete_con_plomo.jpg: 640x640 1 person, 2101.9ms
+image 142/347 /home/mason/toystore/jugueteria_01_01_flickr.jpg: 640x480 1 clock, 1 vase, 1673.1ms
+image 143/347 /home/mason/toystore/jugueteria_01_03_yahoo.jpg: 640x480 1 person, 1 cell phone, 1 book, 1648.2ms
+image 144/347 /home/mason/toystore/jugueteria_01_07_yahoo.jpg: 480x640 3 persons, 1647.8ms
+image 145/347 /home/mason/toystore/jugueteria_01_14_altavista.jpg: 480x640 1 bottle, 1642.4ms
+image 146/347 /home/mason/toystore/jugueteria_01_17_flickr.jpg: 640x480 1 person, 1 skateboard, 1644.1ms
+image 147/347 /home/mason/toystore/jugueteria_02_08_altavista.jpg: 480x640 2 persons, 2 books, 1650.3ms
+image 148/347 /home/mason/toystore/jugueteria_02_10_altavista.jpg: 480x640 (no detections), 1646.2ms
+image 149/347 /home/mason/toystore/jugueteria_02_15_flickr.jpg: 640x480 1 person, 1 book, 1652.2ms
+image 150/347 /home/mason/toystore/jugueteria_02_22_flickr.jpg: 448x640 1 person, 1 teddy bear, 1549.8ms
+image 151/347 /home/mason/toystore/jugueteria_03_04_flickr.jpg: 640x480 1 refrigerator, 1647.6ms
+image 152/347 /home/mason/toystore/jugueteria_03_04_yahoo.jpg: 480x640 3 persons, 3 teddy bears, 1648.5ms
+image 153/347 /home/mason/toystore/jugueteria_03_11_flickr.jpg: 640x480 2 persons, 1643.9ms
+image 154/347 /home/mason/toystore/jugueteria_03_12_flickr.jpg: 448x640 5 persons, 1 chair, 3 books, 1547.2ms
+image 155/347 /home/mason/toystore/jugueteria_04_03_flickr.jpg: 480x640 2 persons, 1 handbag, 5 teddy bears, 1647.1ms
+image 156/347 /home/mason/toystore/jugueteria_04_07_yahoo.jpg: 480x640 4 persons, 1 cat, 9 teddy bears, 1638.7ms
+image 157/347 /home/mason/toystore/jugueteria_04_10_altavista.jpg: 512x640 1 person, 1 refrigerator, 1716.0ms
+image 158/347 /home/mason/toystore/jugueteria_04_24_flickr.jpg: 480x640 1 car, 1 clock, 1619.5ms
+image 159/347 /home/mason/toystore/jugueteria_05_02_flickr.jpg: 640x448 1 person, 1582.9ms
+image 160/347 /home/mason/toystore/jugueteria_05_03_flickr.jpg: 480x640 1 person, 1644.5ms
+image 161/347 /home/mason/toystore/jugueteria_05_17_flickr.jpg: 640x480 1 person, 1 cell phone, 1648.5ms
+image 162/347 /home/mason/toystore/jugueteria_06_08_flickr.jpg: 512x640 1 clock, 1726.1ms
+image 163/347 /home/mason/toystore/jugueteria_06_21_flickr.jpg: 448x640 4 persons, 1 truck, 1 teddy bear, 1525.7ms
+image 164/347 /home/mason/toystore/jugueteria_06_22_flickr.jpg: 640x448 1 person, 1 suitcase, 2 bottles, 1544.1ms
+image 165/347 /home/mason/toystore/jugueteria_07_08_yahoo.jpg: 480x640 7 persons, 1 handbag, 1631.2ms
+image 166/347 /home/mason/toystore/jugueteria_07_15_flickr.jpg: 640x448 2 persons, 1547.1ms
+image 167/347 /home/mason/toystore/jugueteria_08_02_flickr.jpg: 640x448 1 person, 1546.7ms
+image 168/347 /home/mason/toystore/jugueteria_08_05_flickr.jpg: 480x640 1 person, 10 teddy bears, 1639.4ms
+image 169/347 /home/mason/toystore/jugueteria_08_09_yahoo.jpg: 480x640 1 person, 3 bottles, 1 chair, 1 refrigerator, 1635.2ms
+image 170/347 /home/mason/toystore/jugueteria_08_10_altavista.jpg: 480x640 (no detections), 1640.0ms
+image 171/347 /home/mason/toystore/jugueteria_08_10_yahoo.jpg: 448x640 4 persons, 1 truck, 1 teddy bear, 1570.4ms
+image 172/347 /home/mason/toystore/jugueteria_08_21_flickr.jpg: 480x640 2 persons, 4 books, 1635.7ms
+image 173/347 /home/mason/toystore/jugueteria_09_01_flickr.jpg: 640x448 1 person, 1548.8ms
+image 174/347 /home/mason/toystore/jugueteria_09_06_flickr.jpg: 480x640 (no detections), 1634.8ms
+image 175/347 /home/mason/toystore/jugueteria_09_14_yahoo.jpg: 480x640 1 umbrella, 1 suitcase, 1 clock, 1640.3ms
+image 176/347 /home/mason/toystore/jugueteria_09_22_flickr.jpg: 480x640 4 persons, 2 motorcycles, 1633.6ms
+image 177/347 /home/mason/toystore/jugueteria_09_24_flickr.jpg: 480x640 1 person, 3 teddy bears, 1628.3ms
+image 178/347 /home/mason/toystore/jugueteria_10_03_flickr.jpg: 640x480 2 persons, 1 handbag, 1 teddy bear, 1630.8ms
+image 179/347 /home/mason/toystore/jugueteria_10_10_flickr.jpg: 640x480 1 car, 1634.0ms
+image 180/347 /home/mason/toystore/jugueteria_10_17_yahoo.jpg: 480x640 2 motorcycles, 1646.2ms
+image 181/347 /home/mason/toystore/jugueteria_11_11_yahoo.jpg: 640x480 1 person, 1 cell phone, 1633.1ms
+image 182/347 /home/mason/toystore/jugueteria_11_12_yahoo.jpg: 640x480 1 person, 1631.6ms
+image 183/347 /home/mason/toystore/jugueteria_14_06_flickr.jpg: 416x640 7 persons, 4 teddy bears, 1433.4ms
+image 184/347 /home/mason/toystore/jugueteria_14_15_flickr.jpg: 480x640 4 persons, 4 umbrellas, 1 suitcase, 1 chair, 1612.6ms
+image 185/347 /home/mason/toystore/jugueteria_14_24_flickr.jpg: 480x640 2 persons, 1641.8ms
+image 186/347 /home/mason/toystore/jugueteria_15_09_flickr.jpg: 480x640 3 persons, 1 banana, 6 teddy bears, 1640.1ms
+image 187/347 /home/mason/toystore/jugueteria_15_10_flickr.jpg: 640x480 3 persons, 2 handbags, 1 tie, 1642.2ms
+image 188/347 /home/mason/toystore/jugueteria_15_13_flickr.jpg: 480x640 3 persons, 1644.0ms
+image 189/347 /home/mason/toystore/jugueteria_16_03_flickr.jpg: 640x480 1 person, 1644.6ms
+image 190/347 /home/mason/toystore/jugueteria_16_04_flickr.jpg: 640x480 1 person, 1 chair, 1642.6ms
+image 191/347 /home/mason/toystore/jugueteria_16_08_flickr.jpg: 480x640 3 persons, 1 kite, 1652.3ms
+image 192/347 /home/mason/toystore/jugueteria_16_09_flickr.jpg: 480x640 1 car, 2 motorcycles, 1 truck, 1 clock, 1662.6ms
+image 193/347 /home/mason/toystore/jugueteria_16_14_flickr.jpg: 480x640 1 person, 1 umbrella, 1 pizza, 1638.1ms
+image 194/347 /home/mason/toystore/jugueteria_16_16_flickr.jpg: 640x480 (no detections), 1637.8ms
+image 195/347 /home/mason/toystore/jugueteria_16_18_flickr.jpg: 640x480 4 persons, 1 teddy bear, 1651.4ms
+image 196/347 /home/mason/toystore/jugueteria_16_19_flickr.jpg: 480x640 2 persons, 1641.9ms
+image 197/347 /home/mason/toystore/jugueteria_16_21_flickr.jpg: 480x640 1 person, 6 books, 1645.3ms
+image 198/347 /home/mason/toystore/jugueteria_16_22_flickr.jpg: 480x640 3 clocks, 1645.5ms
+image 199/347 /home/mason/toystore/jugueteria_17_01_flickr.jpg: 640x480 1 person, 1 bottle, 1 book, 1643.2ms
+image 200/347 /home/mason/toystore/jugueteria_17_09_flickr.jpg: 480x640 1 person, 2 wine glasss, 5 cups, 1 chair, 1646.5ms
+image 201/347 /home/mason/toystore/jugueteria_17_14_yahoo.jpg: 544x640 3 persons, 1826.2ms
+image 202/347 /home/mason/toystore/jugueteria_17_15_flickr.jpg: 640x480 3 persons, 1 handbag, 1630.7ms
+image 203/347 /home/mason/toystore/jugueteria_18_12_flickr.jpg: 480x640 3 persons, 3 teddy bears, 1639.7ms
+image 204/347 /home/mason/toystore/jugueteria_18_13_flickr.jpg: 640x480 (no detections), 1645.1ms
+image 205/347 /home/mason/toystore/jugueteria_18_23_flickr.jpg: 480x640 12 persons, 1 backpack, 1 bottle, 1643.0ms
+image 206/347 /home/mason/toystore/jugueteria_19_01_flickr.jpg: 640x480 3 persons, 1 car, 5 teddy bears, 1644.0ms
+image 207/347 /home/mason/toystore/jugueteria_19_14_flickr.jpg: 480x640 9 persons, 1 handbag, 1645.5ms
+image 208/347 /home/mason/toystore/jugueteria_19_18_flickr.jpg: 640x480 1 person, 1 handbag, 1 book, 1661.8ms
+image 209/347 /home/mason/toystore/jugueteria_19_22_flickr.jpg: 640x480 3 persons, 1 backpack, 2 handbags, 1661.4ms
+image 210/347 /home/mason/toystore/jugueteria_20_11_flickr.jpg: 480x640 6 persons, 1 chair, 1 potted plant, 1654.6ms
+image 211/347 /home/mason/toystore/jugueteria_20_21_flickr.jpg: 640x480 1 person, 5 teddy bears, 1648.1ms
+image 212/347 /home/mason/toystore/jugueteria_21_01_flickr.jpg: 480x640 1 person, 1 horse, 1 tv, 1643.6ms
+image 213/347 /home/mason/toystore/jugueteria_21_03_flickr.jpg: 480x640 5 persons, 1 dog, 1 horse, 6 teddy bears, 1649.3ms
+image 214/347 /home/mason/toystore/jugueteria_21_06_flickr.jpg: 480x640 2 persons, 1 bird, 1 dog, 1 horse, 1 zebra, 11 teddy bears, 1629.1ms
+image 215/347 /home/mason/toystore/jugueteria_21_11_flickr.jpg: 480x640 1 person, 1636.4ms
+image 216/347 /home/mason/toystore/jugueteria_21_12_flickr.jpg: 480x640 2 persons, 1647.5ms
+image 217/347 /home/mason/toystore/jugueteria_21_24_flickr.jpg: 640x480 3 persons, 1 cat, 1637.3ms
+image 218/347 /home/mason/toystore/jugueteria_22_10_flickr.jpg: 640x480 (no detections), 1634.4ms
+image 219/347 /home/mason/toystore/jugueteria_22_14_flickr.jpg: 480x640 2 persons, 1 dog, 1 elephant, 1640.0ms
+image 220/347 /home/mason/toystore/jugueteria_23_18_flickr.jpg: 480x640 7 persons, 4 books, 1 teddy bear, 1630.8ms
+image 221/347 /home/mason/toystore/jugueteria_23_22_flickr.jpg: 480x640 4 persons, 1 dog, 2 teddy bears, 1633.0ms
+image 222/347 /home/mason/toystore/jugueteria_24_03_flickr.jpg: 480x640 1 person, 1 cat, 3 dogs, 3 teddy bears, 1631.9ms
+image 223/347 /home/mason/toystore/jugueteria_24_06_flickr.jpg: 480x640 3 persons, 1 dog, 2 sheeps, 1 cow, 1642.8ms
+image 224/347 /home/mason/toystore/jugueteria_24_15_flickr.jpg: 480x640 7 persons, 1632.6ms
+image 225/347 /home/mason/toystore/jugueteria_24_22_flickr.jpg: 480x640 9 persons, 2 handbags, 2 bananas, 1638.0ms
+image 226/347 /home/mason/toystore/jugueteria_25_08_yahoo.jpg: 480x640 3 persons, 4 dogs, 3 horses, 1 elephant, 1636.5ms
+image 227/347 /home/mason/toystore/jugueteria_25_12_flickr.jpg: 640x480 4 persons, 1 book, 1 clock, 1639.6ms
+image 228/347 /home/mason/toystore/jugueteria_25_16_flickr.jpg: 640x480 2 persons, 1 cat, 1 handbag, 1634.5ms
+image 229/347 /home/mason/toystore/keeling_market20.jpg: 640x640 8 persons, 2 teddy bears, 2118.2ms
+image 230/347 /home/mason/toystore/kidonyc_store2.jpg: 640x640 1 bicycle, 1 dog, 1 horse, 1 sheep, 2 chairs, 3 books, 2120.3ms
+image 231/347 /home/mason/toystore/lcb_museu_joguets.jpg: 640x640 1 motorcycle, 1 bottle, 1 chair, 2110.5ms
+image 232/347 /home/mason/toystore/le_guide_jouets_2007_14112006_500.jpg: 640x640 10 books, 2124.4ms
+image 233/347 /home/mason/toystore/magasin.jpg: 480x640 1 person, 1 teddy bear, 1636.5ms
+image 234/347 /home/mason/toystore/magasin_jouet_13_11_altavista.jpg: 480x640 18 teddy bears, 1638.0ms
+image 235/347 /home/mason/toystore/magasin_jouet_39_19_altavista.jpg: 480x640 1 refrigerator, 1636.8ms
+image 236/347 /home/mason/toystore/magasin_jouet_index.jpg: 320x640 1 person, 1164.9ms
+image 237/347 /home/mason/toystore/n1.jpg: 640x640 (no detections), 2102.8ms
+image 238/347 /home/mason/toystore/n10.jpg: 640x640 (no detections), 2110.6ms
+image 239/347 /home/mason/toystore/n5.jpg: 640x640 6 books, 2131.6ms
+image 240/347 /home/mason/toystore/n6.jpg: 640x640 6 books, 2114.1ms
+image 241/347 /home/mason/toystore/n7.jpg: 640x640 10 books, 2128.4ms
+image 242/347 /home/mason/toystore/n8.jpg: 640x640 2 books, 2111.3ms
+image 243/347 /home/mason/toystore/n9.jpg: 640x640 3 persons, 1 handbag, 4 books, 2124.4ms
+image 244/347 /home/mason/toystore/photo44.jpg: 640x640 1 dog, 2 teddy bears, 2106.2ms
+image 245/347 /home/mason/toystore/r_5.jpg: 640x640 (no detections), 2126.1ms
+image 246/347 /home/mason/toystore/south_haven_michigan_toy_educational_store4.jpg: 640x640 6 books, 1 vase, 2107.9ms
+image 247/347 /home/mason/toystore/south_haven_michigan_toy_educational_store6.jpg: 640x640 3 books, 2121.4ms
+image 248/347 /home/mason/toystore/speelgoed_05_08_yahoo.jpg: 640x480 1 cake, 2 clocks, 1627.5ms
+image 249/347 /home/mason/toystore/speelgoed_09_15_altavista.jpg: 480x640 1 book, 1648.2ms
+image 250/347 /home/mason/toystore/speelgoed_11_08_altavista.jpg: 640x480 1 cup, 2 bowls, 1 book, 2 clocks, 1637.9ms
+image 251/347 /home/mason/toystore/speelgoed_13_03_flickr.jpg: 576x640 2 persons, 1 bowl, 1927.1ms
+image 252/347 /home/mason/toystore/speelgoed_15_15_yahoo.jpg: 480x640 1 person, 1616.6ms
+image 253/347 /home/mason/toystore/speelgoed_16_15_yahoo.jpg: 480x640 2 persons, 1 vase, 4 teddy bears, 1657.5ms
+image 254/347 /home/mason/toystore/speelgoed_17_18_yahoo.jpg: 480x640 1 truck, 1 potted plant, 2 books, 1631.5ms
+image 255/347 /home/mason/toystore/speelgoed_35_12_altavista.jpg: 480x640 (no detections), 1641.2ms
+image 256/347 /home/mason/toystore/speelgoed_35_13_altavista.jpg: 480x640 1 potted plant, 1656.6ms
+image 257/347 /home/mason/toystore/speelgoed_36_11_altavista.jpg: 480x640 1 book, 1633.5ms
+image 258/347 /home/mason/toystore/speelgoed_40_18_flickr.jpg: 448x640 1 bicycle, 1562.1ms
+image 259/347 /home/mason/toystore/speelgoed_40_20_flickr.jpg: 480x640 1 chair, 1651.9ms
+image 260/347 /home/mason/toystore/speelgoed_45_01_flickr.jpg: 480x640 9 persons, 1 backpack, 1658.3ms
+image 261/347 /home/mason/toystore/speelgoed_46_10_flickr.jpg: 480x640 4 persons, 1 handbag, 1644.8ms
+image 262/347 /home/mason/toystore/speelgoed_54_22_flickr.jpg: 480x640 2 persons, 1650.8ms
+image 263/347 /home/mason/toystore/speelgoed_55_18_flickr.jpg: 480x640 (no detections), 1642.6ms
+image 264/347 /home/mason/toystore/speelgoed_58_02_flickr.jpg: 448x640 2 persons, 1 remote, 1558.2ms
+image 265/347 /home/mason/toystore/speelgoed_58_24_flickr.jpg: 480x640 2 cups, 1 bowl, 2 teddy bears, 1663.5ms
+image 266/347 /home/mason/toystore/speelgoed_65_24_flickr.jpg: 480x640 1 person, 1637.5ms
+image 267/347 /home/mason/toystore/speelgoed_66_02_flickr.jpg: 480x640 1 person, 1640.3ms
+image 268/347 /home/mason/toystore/speelgoed_66_08_flickr.jpg: 480x640 (no detections), 1648.7ms
+image 269/347 /home/mason/toystore/speelgoed_68_08_flickr.jpg: 480x640 1 person, 2 clocks, 1669.1ms
+image 270/347 /home/mason/toystore/speelgoed_78_15_flickr.jpg: 480x640 11 persons, 1654.4ms
+image 271/347 /home/mason/toystore/spider_knife_low.jpg: 640x640 1 person, 1 cat, 1 horse, 2149.2ms
+image 272/347 /home/mason/toystore/store3sm.jpg: 640x640 (no detections), 2153.7ms
+image 273/347 /home/mason/toystore/store_infant.jpg: 640x640 (no detections), 2147.9ms
+image 274/347 /home/mason/toystore/store_infant8.jpg: 640x640 (no detections), 2115.9ms
+image 275/347 /home/mason/toystore/store_thomas.jpg: 640x640 1 book, 1 clock, 2115.6ms
+image 276/347 /home/mason/toystore/storeinside.jpg: 640x640 (no detections), 2133.9ms
+image 277/347 /home/mason/toystore/storeinside89.jpg: 640x640 (no detections), 2132.0ms
+image 278/347 /home/mason/toystore/tb_store3.jpg: 640x640 1 clock, 2122.2ms
+image 279/347 /home/mason/toystore/tienda1.jpg: 448x640 6 books, 1 vase, 1547.3ms
+image 280/347 /home/mason/toystore/toys.jpg: 640x640 2 cars, 3 teddy bears, 2146.2ms
+image 281/347 /home/mason/toystore/toys18.jpg: 640x640 1 person, 19 cars, 4 buss, 2 cell phones, 2127.1ms
+image 282/347 /home/mason/toystore/toys_japan.jpg: 640x640 (no detections), 2127.9ms
+image 283/347 /home/mason/toystore/toys_store_01_06_altavista.jpg: 512x640 (no detections), 1736.3ms
+image 284/347 /home/mason/toystore/toys_store_01_08_altavista.jpg: 512x640 1 dog, 1 cow, 1 giraffe, 1 potted plant, 1717.2ms
+image 285/347 /home/mason/toystore/toys_store_01_09_altavista.jpg: 512x640 1 clock, 1722.6ms
+image 286/347 /home/mason/toystore/toys_store_01_09_flickr.jpg: 448x640 10 teddy bears, 1548.7ms
+image 287/347 /home/mason/toystore/toys_store_01_13_altavista.jpg: 480x640 2 persons, 1655.9ms
+image 288/347 /home/mason/toystore/toys_store_01_23_flickr.jpg: 448x640 (no detections), 1559.3ms
+image 289/347 /home/mason/toystore/toys_store_02_06_altavista.jpg: 480x640 (no detections), 1651.0ms
+image 290/347 /home/mason/toystore/toys_store_03_10_altavista.jpg: 640x480 1 vase, 1670.9ms
+image 291/347 /home/mason/toystore/toys_store_03_18_altavista.jpg: 480x640 7 books, 1670.6ms
+image 292/347 /home/mason/toystore/toys_store_03_20_altavista.jpg: 480x640 4 books, 1645.3ms
+image 293/347 /home/mason/toystore/toys_store_04_01_altavista.jpg: 480x640 1 car, 1 clock, 1643.1ms
+image 294/347 /home/mason/toystore/toys_store_06_08_altavista.jpg: 480x640 1 refrigerator, 1640.4ms
+image 295/347 /home/mason/toystore/toys_store_06_15_altavista.jpg: 480x640 3 persons, 1 kite, 20 books, 1 teddy bear, 1651.1ms
+image 296/347 /home/mason/toystore/toys_store_07_02_altavista.jpg: 640x480 (no detections), 1666.2ms
+image 297/347 /home/mason/toystore/toys_store_07_14_altavista.jpg: 480x640 1 person, 1643.9ms
+image 298/347 /home/mason/toystore/toys_store_09_02_altavista.jpg: 512x640 (no detections), 1726.1ms
+image 299/347 /home/mason/toystore/toys_store_12_04_altavista.jpg: 480x640 4 books, 1653.9ms
+image 300/347 /home/mason/toystore/toys_store_12_18_altavista.jpg: 448x640 3 persons, 2 sports balls, 1 book, 1554.3ms
+image 301/347 /home/mason/toystore/toys_store_14_07_altavista.jpg: 640x640 (no detections), 2143.0ms
+image 302/347 /home/mason/toystore/toys_store_14_11_altavista.jpg: 640x544 2 teddy bears, 1823.3ms
+image 303/347 /home/mason/toystore/toys_store_14_12_altavista.jpg: 640x480 8 books, 1 clock, 1672.8ms
+image 304/347 /home/mason/toystore/toys_store_14_14_altavista.jpg: 640x480 1 umbrella, 1623.0ms
+image 305/347 /home/mason/toystore/toys_store_14_15_altavista.jpg: 640x480 8 books, 1638.6ms
+image 306/347 /home/mason/toystore/toys_store_16_01_altavista.jpg: 640x448 3 persons, 1 tie, 1 teddy bear, 1561.2ms
+image 307/347 /home/mason/toystore/toys_store_16_05_altavista.jpg: 480x640 (no detections), 1642.4ms
+image 308/347 /home/mason/toystore/toys_store_18_02_altavista.jpg: 480x640 4 clocks, 1645.2ms
+image 309/347 /home/mason/toystore/toys_store_19_12_altavista.jpg: 512x640 1 book, 1738.0ms
+image 310/347 /home/mason/toystore/toys_store_19_14_altavista.jpg: 640x448 2 persons, 1 chair, 1526.6ms
+image 311/347 /home/mason/toystore/toys_store_21_19_altavista.jpg: 640x544 2 teddy bears, 1820.7ms
+image 312/347 /home/mason/toystore/toys_store_22_06_altavista.jpg: 480x640 2 books, 1616.2ms
+image 313/347 /home/mason/toystore/toys_store_22_11_altavista.jpg: 448x640 5 books, 1552.4ms
+image 314/347 /home/mason/toystore/toys_store_23_01_altavista.jpg: 480x640 (no detections), 1653.2ms
+image 315/347 /home/mason/toystore/toys_store_23_02_altavista.jpg: 480x640 6 books, 1659.8ms
+image 316/347 /home/mason/toystore/toys_store_23_03_altavista.jpg: 480x640 1 person, 4 books, 1 clock, 1642.4ms
+image 317/347 /home/mason/toystore/toys_store_23_18_altavista.jpg: 320x640 1 person, 1 chair, 1 clock, 1157.7ms
+image 318/347 /home/mason/toystore/toys_store_23_20_altavista.jpg: 352x640 (no detections), 1233.6ms
+image 319/347 /home/mason/toystore/toys_store_24_03_altavista.jpg: 416x640 (no detections), 1433.4ms
+image 320/347 /home/mason/toystore/toys_store_26_12_altavista.jpg: 640x480 (no detections), 1558.0ms
+image 321/347 /home/mason/toystore/toys_store_27_05_altavista.jpg: 512x640 1 fire hydrant, 1739.9ms
+image 322/347 /home/mason/toystore/toys_store_27_18_altavista.jpg: 320x640 2 persons, 1 car, 1 truck, 3 books, 1 teddy bear, 1132.7ms
+image 323/347 /home/mason/toystore/toys_store_27_19_altavista.jpg: 480x640 (no detections), 1613.8ms
+image 324/347 /home/mason/toystore/toys_store_31_04_altavista.jpg: 480x640 1 bottle, 1 potted plant, 1665.4ms
+image 325/347 /home/mason/toystore/toys_store_34_02_altavista.jpg: 640x480 1 orange, 1643.5ms
+image 326/347 /home/mason/toystore/toys_store_34_07_altavista.jpg: 512x640 1 traffic light, 1723.6ms
+image 327/347 /home/mason/toystore/toys_store_35_03_altavista.jpg: 448x640 (no detections), 1526.9ms
+image 328/347 /home/mason/toystore/toys_store_36_07_altavista.jpg: 480x640 3 motorcycles, 2 trucks, 1652.1ms
+image 329/347 /home/mason/toystore/toys_store_37_06_altavista.jpg: 512x640 2 chairs, 1 dining table, 2 refrigerators, 3 books, 1738.3ms
+image 330/347 /home/mason/toystore/toys_store_41_15_altavista.jpg: 512x640 (no detections), 1724.2ms
+image 331/347 /home/mason/toystore/toys_store_41_20_altavista.jpg: 512x640 1 person, 1 refrigerator, 1729.6ms
+image 332/347 /home/mason/toystore/toys_store_42_11_altavista.jpg: 480x640 2 persons, 1 book, 1629.9ms
+image 333/347 /home/mason/toystore/toys_store_43_03_altavista.jpg: 416x640 1 person, 1 chair, 1459.7ms
+image 334/347 /home/mason/toystore/toys_store_43_05_altavista.jpg: 416x640 2 persons, 1 bottle, 1 banana, 1 chair, 1 dining table, 1 book, 1462.5ms
+image 335/347 /home/mason/toystore/toys_store_43_15_altavista.jpg: 480x640 2 persons, 2 chairs, 3 books, 1644.2ms
+image 336/347 /home/mason/toystore/toys_store_44_03_altavista.jpg: 640x448 (no detections), 1555.7ms
+image 337/347 /home/mason/toystore/toys_store_45_05_altavista.jpg: 640x384 1 book, 1354.2ms
+image 338/347 /home/mason/toystore/toys_store_45_15_altavista.jpg: 480x640 3 persons, 4 chairs, 1 tv, 1 book, 1619.9ms
+image 339/347 /home/mason/toystore/toys_store_45_17_altavista.jpg: 640x512 (no detections), 1737.5ms
+image 340/347 /home/mason/toystore/toys_store_45_18_altavista.jpg: 640x576 (no detections), 1933.0ms
+image 341/347 /home/mason/toystore/toys_store_47_02_altavista.jpg: 608x640 (no detections), 2044.4ms
+image 342/347 /home/mason/toystore/toys_store_48_16_altavista.jpg: 640x512 1 person, 1 bowl, 1716.8ms
+image 343/347 /home/mason/toystore/toys_store_51_04_altavista.jpg: 608x640 1 person, 1 tv, 2014.2ms
+image 344/347 /home/mason/toystore/toystoregreat.jpg: 640x640 1 car, 4 buss, 2 books, 2104.0ms
+image 345/347 /home/mason/toystore/url.jpg: 480x640 7 persons, 1 boat, 1 clock, 1632.5ms
+image 346/347 /home/mason/toystore/url4.jpg: 640x640 (no detections), 2135.0ms
+image 347/347 /home/mason/toystore/url56.jpg: 640x640 1 person, 1 truck, 2150.2ms
+Speed: 5.1ms pre-process, 1745.5ms inference, 3.0ms NMS per image at shape (1, 3, 640, 640)
+Results saved to yolov5/runs/detect/exp4
