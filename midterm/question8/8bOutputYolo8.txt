@@ -1,0 +1,353 @@
+Ultralytics YOLOv8.0.227 🚀 Python-3.10.12 torch-2.1.1+cu121 CUDA:0 (NVIDIA GeForce GTX 950M, 2003MiB)
+YOLOv8n summary (fused): 168 layers, 3151904 parameters, 0 gradients, 8.7 GFLOPs
+
+image 1/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/0797089377f6f45f3278042aa1d0631d.jpg: 512x640 (no detections), 28.0ms
+image 2/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/109_0940.jpg: 640x640 1 clock, 34.2ms
+image 3/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/114.jpg: 480x640 2 cakes, 1 clock, 26.8ms
+image 4/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/1164876979_0.jpg: 544x640 1 potted plant, 2 clocks, 29.7ms
+image 5/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/1179833350_ee00fb9367.jpg: 640x640 7 teddy bears, 34.6ms
+image 6/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/12.jpg: 480x640 1 teddy bear, 26.8ms
+image 7/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/1486958865_ba21d9acab.jpg: 640x640 1 person, 4 books, 34.8ms
+image 8/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/1529445456_acec85121f.jpg: 640x640 3 persons, 2 teddy bears, 33.0ms
+image 9/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/165.jpg: 480x640 (no detections), 26.9ms
+image 10/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/177.jpg: 480x640 1 clock, 25.2ms
+image 11/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/20070828052224875.jpg: 640x640 1 person, 34.4ms
+image 12/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/213289035_28528f86e0.jpg: 640x640 1 tie, 32.3ms
+image 13/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/2406613103_e9ee362f6c.jpg: 480x640 2 teddy bears, 26.0ms
+image 14/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/2406613109_79a9a378ff.jpg: 480x640 1 person, 1 cup, 1 chair, 1 potted plant, 24.9ms
+image 15/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/245006402_b27063dfcd.jpg: 640x640 3 persons, 2 tvs, 33.5ms
+image 16/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/250507130dh3.jpg: 640x640 3 cars, 1 bus, 6 trucks, 1 suitcase, 32.6ms
+image 17/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/2610497_164b173c1b.jpg: 640x640 1 person, 32.3ms
+image 18/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/262507104_bfa08ef897.jpg: 640x640 5 persons, 1 couch, 32.3ms
+image 19/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/262507231_b0203fd5aa.jpg: 640x640 (no detections), 32.3ms
+image 20/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/262508526_93634b3c2c.jpg: 640x640 4 teddy bears, 32.3ms
+image 21/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/281568964_bb524a3c9e_o.jpg: 448x640 2 persons, 23.3ms
+image 22/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/2863560_5e41fa6652.jpg: 640x640 1 person, 1 train, 34.4ms
+image 23/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/286605441_d9919621ce.jpg: 640x640 1 clock, 32.2ms
+image 24/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/299724113_39b3a2b7f8.jpg: 640x640 (no detections), 32.4ms
+image 25/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/305015506_6df5016b5c.jpg: 640x640 2 suitcases, 32.3ms
+image 26/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/322626923_b365feb0e6.jpg: 640x640 4 persons, 32.2ms
+image 27/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/322627515_6a6372d7a5.jpg: 640x640 (no detections), 32.2ms
+image 28/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/42599209_9be8f72d18.jpg: 640x640 6 persons, 2 teddy bears, 32.4ms
+image 29/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/5.jpg: 640x640 1 tv, 32.4ms
+image 30/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/50224341945f7e87bd1af8.jpg: 640x640 1 person, 32.4ms
+image 31/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/59516206_45f74119d6.jpg: 640x640 (no detections), 32.4ms
+image 32/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/7.jpg: 640x640 1 mouse, 32.3ms
+image 33/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/CIMG0305.jpg: 640x640 4 persons, 1 stop sign, 32.4ms
+image 34/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/CIMG3313.jpg: 640x480 1 book, 25.7ms
+image 35/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/IMG_0198_Asakusa_toy_store.jpg: 640x640 2 persons, 34.0ms
+image 36/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/IMG_2603.jpg: 640x640 4 persons, 1 suitcase, 1 bottle, 1 teddy bear, 32.3ms
+image 37/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/Image13852843.jpg: 640x480 1 chair, 1 clock, 3 teddy bears, 26.0ms
+image 38/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/Image75.jpg: 480x640 4 persons, 2 teddy bears, 26.5ms
+image 39/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/Image_803_.jpg: 480x640 1 person, 1 teddy bear, 24.8ms
+image 40/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/InsideofStore.jpg: 640x640 1 bottle, 1 chair, 34.2ms
+image 41/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/JapaneseToyStore_1200W.jpg: 640x640 (no detections), 32.4ms
+image 42/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/KING_JOUET_5_2_6a484.jpg: 480x640 1 person, 1 chair, 1 clock, 26.3ms
+image 43/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/Milliwiggins_003.jpg: 640x640 1 giraffe, 33.6ms
+image 44/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/P1020153.jpg: 640x640 2 persons, 2 cars, 3 teddy bears, 32.4ms
+image 45/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/PICT0004_png.jpg: 480x640 1 chair, 1 book, 26.2ms
+image 46/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/PICT0009.jpg: 640x480 1 chair, 1 potted plant, 1 teddy bear, 26.3ms
+image 47/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/Peluqueria_043.jpg: 480x640 1 person, 1 refrigerator, 26.1ms
+image 48/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/QuienesSomos.jpg: 448x640 6 persons, 2 bottles, 1 chair, 23.6ms
+image 49/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/RESIDENCIA_008.jpg: 480x640 4 chairs, 26.0ms
+image 50/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/SANY0070.jpg: 480x640 3 persons, 5 teddy bears, 25.0ms
+image 51/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/STG57558.jpg: 480x640 6 teddy bears, 24.8ms
+image 52/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/Spielzeug_02_13_yahoo.jpg: 640x480 5 persons, 1 chair, 1 clock, 26.1ms
+image 53/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/Spielzeug_04_06_yahoo.jpg: 448x640 1 person, 1 bowl, 3 chairs, 23.8ms
+image 54/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/Spielzeug_04_07_yahoo.jpg: 448x640 2 persons, 1 handbag, 22.3ms
+image 55/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/Spielzeug_05_06_yahoo.jpg: 448x640 1 person, 2 bicycles, 2 dogs, 22.3ms
+image 56/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/Spielzeug_101_24_flickr.jpg: 640x544 2 suitcases, 28.9ms
+image 57/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/Spielzeug_11_18_yahoo.jpg: 480x640 2 persons, 1 dining table, 26.4ms
+image 58/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/Spielzeug_123_17_flickr.jpg: 480x640 1 book, 25.1ms
+image 59/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/Spielzeug_12_23_flickr.jpg: 480x640 2 persons, 1 laptop, 25.0ms
+image 60/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/Spielzeug_13_18_flickr.jpg: 480x640 2 persons, 1 bottle, 24.9ms
+image 61/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/Spielzeug_145_06_flickr.jpg: 640x480 (no detections), 26.0ms
+image 62/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/Spielzeug_145_12_flickr.jpg: 640x480 7 persons, 1 clock, 25.0ms
+image 63/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/Spielzeug_147_08_flickr.jpg: 480x640 (no detections), 26.1ms
+image 64/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/Spielzeug_147_10_flickr.jpg: 480x640 (no detections), 24.9ms
+image 65/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/Spielzeug_14_02_flickr.jpg: 480x640 1 teddy bear, 24.9ms
+image 66/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/Spielzeug_14_08_yahoo.jpg: 448x640 1 person, 23.4ms
+image 67/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/Spielzeug_14_21_flickr.jpg: 480x640 7 persons, 26.3ms
+image 68/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/Spielzeug_150_02_flickr.jpg: 480x640 1 person, 1 cake, 24.9ms
+image 69/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/Spielzeug_150_18_flickr.jpg: 640x480 10 bottles, 26.0ms
+image 70/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/Spielzeug_152_01_flickr.jpg: 480x640 3 persons, 1 chair, 26.0ms
+image 71/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/Spielzeug_15_13_yahoo.jpg: 640x512 1 train, 1 truck, 1 vase, 2 teddy bears, 26.2ms
+image 72/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/Spielzeug_163_23_flickr.jpg: 480x640 1 bowl, 1 chair, 26.1ms
+image 73/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/Spielzeug_167_11_flickr.jpg: 480x640 1 person, 1 wine glass, 1 chair, 1 potted plant, 25.2ms
+image 74/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/Spielzeug_168_24_flickr.jpg: 480x640 1 person, 1 chair, 1 potted plant, 1 teddy bear, 24.9ms
+image 75/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/Spielzeug_18_01_flickr.jpg: 448x640 7 persons, 1 tie, 1 bowl, 9 teddy bears, 23.6ms
+image 76/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/Spielzeug_19_20_altavista.jpg: 480x640 7 teddy bears, 26.2ms
+image 77/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/Spielzeug_21_21_flickr.jpg: 480x640 15 persons, 3 chairs, 25.0ms
+image 78/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/Spielzeug_22_08_yahoo.jpg: 448x640 12 persons, 23.5ms
+image 79/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/Spielzeug_24_11_altavista.jpg: 448x640 (no detections), 22.3ms
+image 80/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/Spielzeug_25_14_yahoo.jpg: 448x640 1 microwave, 1 teddy bear, 22.4ms
+image 81/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/Spielzeug_26_24_flickr.jpg: 480x640 14 persons, 1 potted plant, 26.0ms
+image 82/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/Spielzeug_28_23_flickr.jpg: 480x640 (no detections), 24.9ms
+image 83/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/Spielzeug_29_02_flickr.jpg: 480x640 (no detections), 25.0ms
+image 84/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/Spielzeug_29_08_flickr.jpg: 480x640 2 persons, 24.9ms
+image 85/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/Spielzeug_31_06_yahoo.jpg: 480x640 5 persons, 2 cars, 1 truck, 1 chair, 25.1ms
+image 86/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/Spielzeug_31_19_flickr.jpg: 480x640 6 persons, 1 umbrella, 1 bottle, 24.9ms
+image 87/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/Spielzeug_32_14_flickr.jpg: 480x640 4 persons, 1 potted plant, 25.1ms
+image 88/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/Spielzeug_35_09_flickr.jpg: 640x480 8 persons, 26.1ms
+image 89/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/Spielzeug_35_10_yahoo.jpg: 480x640 1 person, 1 teddy bear, 26.4ms
+image 90/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/Spielzeug_41_05_flickr.jpg: 480x640 1 handbag, 1 suitcase, 1 teddy bear, 24.9ms
+image 91/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/Spielzeug_41_09_flickr.jpg: 480x640 1 person, 1 vase, 24.9ms
+image 92/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/Spielzeug_41_18_yahoo.jpg: 512x640 10 persons, 27.3ms
+image 93/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/Spielzeug_48_19_yahoo.jpg: 640x480 8 persons, 1 clock, 25.9ms
+image 94/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/Spielzeug_50_15_flickr.jpg: 480x640 11 persons, 1 dining table, 1 book, 26.2ms
+image 95/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/Spielzeug_56_08_flickr.jpg: 480x640 7 persons, 25.0ms
+image 96/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/Spielzeug_56_09_flickr.jpg: 480x640 8 persons, 1 cup, 4 chairs, 25.0ms
+image 97/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/Spielzeug_58_01_flickr.jpg: 480x640 14 persons, 24.9ms
+image 98/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/Spielzeug_62_10_flickr.jpg: 480x640 15 persons, 1 skateboard, 1 dining table, 24.9ms
+image 99/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/Spielzeug_62_21_flickr.jpg: 480x640 9 persons, 1 chair, 24.9ms
+image 100/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/Spielzeug_70_20_flickr.jpg: 448x640 1 person, 1 refrigerator, 23.4ms
+image 101/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/Spielzeug_75_04_flickr.jpg: 480x640 1 book, 26.1ms
+image 102/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/Spielzeug_83_03_flickr.jpg: 480x640 3 persons, 24.9ms
+image 103/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/Spielzeug_84_23_flickr.jpg: 480x640 15 persons, 2 cars, 2 trucks, 24.9ms
+image 104/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/Spielzeug_85_23_flickr.jpg: 480x640 6 persons, 1 car, 1 bus, 1 fire hydrant, 1 cake, 3 chairs, 25.0ms
+image 105/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/Spielzeug_87_07_flickr.jpg: 448x640 1 person, 1 dog, 1 elephant, 23.5ms
+image 106/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/ToyStoreLg.jpg: 640x640 3 persons, 33.7ms
+image 107/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/UMW_Rummage_Before_Boutique_with_dolls_780356.jpg: 640x640 2 persons, 32.5ms
+image 108/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/Zona_juguetes.jpg: 480x640 1 bicycle, 2 motorcycles, 26.0ms
+image 109/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/a1_toystore1.jpg: 640x640 (no detections), 33.4ms
+image 110/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/a1_toystore2.jpg: 640x640 1 suitcase, 32.4ms
+image 111/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/a1_toystore3.jpg: 640x640 (no detections), 32.4ms
+image 112/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/b1852.jpg: 640x640 1 person, 1 teddy bear, 32.5ms
+image 113/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/com0407_SSALUD.jpg: 448x640 4 persons, 1 banana, 23.4ms
+image 114/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/company02.jpg: 640x640 (no detections), 33.9ms
+image 115/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/d4k_002.jpg: 640x640 1 giraffe, 1 clock, 32.4ms
+image 116/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/d4k_004.jpg: 640x640 1 book, 32.4ms
+image 117/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/d4k_006.jpg: 640x640 2 bottles, 6 teddy bears, 32.3ms
+image 118/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/d4k_007.jpg: 640x640 1 book, 32.5ms
+image 119/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/dscf0478172.jpg: 640x480 (no detections), 25.8ms
+image 120/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/eurekakids_tienda_2.jpg: 512x640 (no detections), 27.6ms
+image 121/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/foto_minori_per_museo_dreoni_2.jpg: 480x640 1 tv, 26.3ms
+image 122/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/fotonuoven80_122.jpg: 640x480 (no detections), 25.9ms
+image 123/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/giocattolo_09_07_flickr.jpg: 640x480 3 persons, 2 handbags, 24.9ms
+image 124/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/giocattolo_12_13_altavista.jpg: 448x640 2 persons, 23.6ms
+image 125/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/giocattolo_32_19_altavista.jpg: 512x640 6 persons, 1 airplane, 1 suitcase, 27.3ms
+image 126/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/giocattolo_49_02_flickr.jpg: 480x640 4 persons, 1 bottle, 1 cup, 25.9ms
+image 127/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/giocattolo_52_03_flickr.jpg: 480x640 2 bottles, 25.0ms
+image 128/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/giocattolo_57_16_flickr.jpg: 480x640 (no detections), 24.9ms
+image 129/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/giocattolo_57_19_flickr.jpg: 480x640 (no detections), 25.0ms
+image 130/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/gs_toyrm_lg.jpg: 640x640 (no detections), 33.4ms
+image 131/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/gs_toys_lg.jpg: 640x640 1 umbrella, 1 teddy bear, 32.5ms
+image 132/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/gs_ty_lg.jpg: 640x640 1 bowl, 32.6ms
+image 133/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/hracka_01_21_flickr.jpg: 480x640 2 persons, 2 clocks, 26.0ms
+image 134/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/hracka_04_11_yahoo.jpg: 480x640 1 person, 1 bottle, 2 chairs, 25.0ms
+image 135/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/im001031.jpg: 640x480 (no detections), 26.4ms
+image 136/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/im001034.jpg: 480x640 (no detections), 26.4ms
+image 137/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/img_29916_t.jpg: 640x640 1 vase, 33.7ms
+image 138/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/imgp0927web.jpg: 640x640 1 person, 6 teddy bears, 32.5ms
+image 139/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/jouets3.jpg: 640x640 7 teddy bears, 32.4ms
+image 140/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/jouets5.jpg: 640x640 3 persons, 1 book, 32.5ms
+image 141/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/juguete_con_plomo.jpg: 640x640 1 person, 32.4ms
+image 142/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/jugueteria_01_01_flickr.jpg: 640x480 1 vase, 26.2ms
+image 143/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/jugueteria_01_03_yahoo.jpg: 640x480 2 persons, 1 backpack, 25.2ms
+image 144/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/jugueteria_01_07_yahoo.jpg: 480x640 3 persons, 26.2ms
+image 145/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/jugueteria_01_14_altavista.jpg: 480x640 1 potted plant, 1 teddy bear, 24.9ms
+image 146/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/jugueteria_01_17_flickr.jpg: 640x480 1 person, 26.0ms
+image 147/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/jugueteria_02_08_altavista.jpg: 480x640 2 persons, 26.4ms
+image 148/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/jugueteria_02_10_altavista.jpg: 480x640 (no detections), 25.0ms
+image 149/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/jugueteria_02_15_flickr.jpg: 640x480 2 persons, 26.1ms
+image 150/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/jugueteria_02_22_flickr.jpg: 448x640 1 person, 1 teddy bear, 23.5ms
+image 151/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/jugueteria_03_04_flickr.jpg: 640x480 2 persons, 2 refrigerators, 26.4ms
+image 152/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/jugueteria_03_04_yahoo.jpg: 480x640 4 persons, 3 teddy bears, 26.0ms
+image 153/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/jugueteria_03_11_flickr.jpg: 640x480 2 persons, 1 carrot, 26.0ms
+image 154/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/jugueteria_03_12_flickr.jpg: 448x640 4 persons, 1 chair, 23.3ms
+image 155/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/jugueteria_04_03_flickr.jpg: 480x640 2 persons, 1 teddy bear, 26.1ms
+image 156/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/jugueteria_04_07_yahoo.jpg: 480x640 4 persons, 1 cat, 8 teddy bears, 25.0ms
+image 157/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/jugueteria_04_10_altavista.jpg: 512x640 1 person, 27.5ms
+image 158/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/jugueteria_04_24_flickr.jpg: 480x640 1 clock, 1 teddy bear, 26.3ms
+image 159/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/jugueteria_05_02_flickr.jpg: 640x448 1 teddy bear, 23.9ms
+image 160/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/jugueteria_05_03_flickr.jpg: 480x640 1 person, 26.3ms
+image 161/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/jugueteria_05_17_flickr.jpg: 640x480 1 person, 26.0ms
+image 162/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/jugueteria_06_08_flickr.jpg: 512x640 (no detections), 27.6ms
+image 163/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/jugueteria_06_21_flickr.jpg: 448x640 3 persons, 1 truck, 2 teddy bears, 23.4ms
+image 164/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/jugueteria_06_22_flickr.jpg: 640x448 2 persons, 24.9ms
+image 165/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/jugueteria_07_08_yahoo.jpg: 480x640 8 persons, 1 motorcycle, 25.9ms
+image 166/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/jugueteria_07_15_flickr.jpg: 640x448 1 person, 24.5ms
+image 167/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/jugueteria_08_02_flickr.jpg: 640x448 1 person, 1 motorcycle, 23.6ms
+image 168/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/jugueteria_08_05_flickr.jpg: 480x640 1 person, 3 teddy bears, 25.9ms
+image 169/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/jugueteria_08_09_yahoo.jpg: 480x640 2 persons, 25.0ms
+image 170/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/jugueteria_08_10_altavista.jpg: 480x640 (no detections), 24.9ms
+image 171/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/jugueteria_08_10_yahoo.jpg: 448x640 3 persons, 1 truck, 2 teddy bears, 23.2ms
+image 172/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/jugueteria_08_21_flickr.jpg: 480x640 2 persons, 1 teddy bear, 26.0ms
+image 173/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/jugueteria_09_01_flickr.jpg: 640x448 1 person, 1 teddy bear, 24.7ms
+image 174/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/jugueteria_09_06_flickr.jpg: 480x640 1 apple, 26.2ms
+image 175/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/jugueteria_09_14_yahoo.jpg: 480x640 1 suitcase, 24.9ms
+image 176/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/jugueteria_09_22_flickr.jpg: 480x640 4 persons, 4 motorcycles, 25.0ms
+image 177/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/jugueteria_09_24_flickr.jpg: 480x640 1 person, 2 teddy bears, 24.9ms
+image 178/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/jugueteria_10_03_flickr.jpg: 640x480 2 persons, 1 teddy bear, 26.2ms
+image 179/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/jugueteria_10_10_flickr.jpg: 640x480 1 person, 1 car, 25.0ms
+image 180/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/jugueteria_10_17_yahoo.jpg: 480x640 1 car, 1 motorcycle, 1 clock, 25.9ms
+image 181/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/jugueteria_11_11_yahoo.jpg: 640x480 1 person, 25.9ms
+image 182/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/jugueteria_11_12_yahoo.jpg: 640x480 2 persons, 25.0ms
+image 183/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/jugueteria_14_06_flickr.jpg: 416x640 10 persons, 2 bananas, 3 teddy bears, 22.3ms
+image 184/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/jugueteria_14_15_flickr.jpg: 480x640 2 persons, 6 umbrellas, 3 chairs, 1 dining table, 26.3ms
+image 185/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/jugueteria_14_24_flickr.jpg: 480x640 3 persons, 24.9ms
+image 186/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/jugueteria_15_09_flickr.jpg: 480x640 2 persons, 1 bottle, 4 teddy bears, 25.1ms
+image 187/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/jugueteria_15_10_flickr.jpg: 640x480 2 persons, 2 handbags, 26.2ms
+image 188/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/jugueteria_15_13_flickr.jpg: 480x640 3 persons, 26.4ms
+image 189/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/jugueteria_16_03_flickr.jpg: 640x480 1 person, 26.1ms
+image 190/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/jugueteria_16_04_flickr.jpg: 640x480 1 person, 24.9ms
+image 191/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/jugueteria_16_08_flickr.jpg: 480x640 6 persons, 1 book, 25.9ms
+image 192/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/jugueteria_16_09_flickr.jpg: 480x640 1 car, 1 motorcycle, 24.6ms
+image 193/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/jugueteria_16_14_flickr.jpg: 480x640 1 person, 1 bottle, 24.9ms
+image 194/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/jugueteria_16_16_flickr.jpg: 640x480 (no detections), 26.2ms
+image 195/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/jugueteria_16_18_flickr.jpg: 640x480 4 persons, 1 teddy bear, 25.0ms
+image 196/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/jugueteria_16_19_flickr.jpg: 480x640 2 persons, 1 banana, 26.1ms
+image 197/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/jugueteria_16_21_flickr.jpg: 480x640 2 persons, 24.9ms
+image 198/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/jugueteria_16_22_flickr.jpg: 480x640 2 clocks, 25.0ms
+image 199/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/jugueteria_17_01_flickr.jpg: 640x480 1 person, 1 bottle, 4 books, 26.4ms
+image 200/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/jugueteria_17_09_flickr.jpg: 480x640 1 person, 1 bottle, 1 wine glass, 2 cups, 1 chair, 25.9ms
+image 201/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/jugueteria_17_14_yahoo.jpg: 544x640 3 persons, 29.4ms
+image 202/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/jugueteria_17_15_flickr.jpg: 640x480 2 persons, 26.3ms
+image 203/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/jugueteria_18_12_flickr.jpg: 480x640 4 persons, 3 teddy bears, 26.2ms
+image 204/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/jugueteria_18_13_flickr.jpg: 640x480 2 persons, 25.8ms
+image 205/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/jugueteria_18_23_flickr.jpg: 480x640 13 persons, 1 backpack, 1 bottle, 26.0ms
+image 206/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/jugueteria_19_01_flickr.jpg: 640x480 2 persons, 1 car, 1 bottle, 6 teddy bears, 26.2ms
+image 207/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/jugueteria_19_14_flickr.jpg: 480x640 9 persons, 1 bottle, 1 cake, 25.9ms
+image 208/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/jugueteria_19_18_flickr.jpg: 640x480 2 persons, 1 handbag, 25.9ms
+image 209/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/jugueteria_19_22_flickr.jpg: 640x480 2 persons, 1 backpack, 1 handbag, 1 skateboard, 24.9ms
+image 210/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/jugueteria_20_11_flickr.jpg: 480x640 6 persons, 26.1ms
+image 211/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/jugueteria_20_21_flickr.jpg: 640x480 1 person, 2 donuts, 1 teddy bear, 26.3ms
+image 212/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/jugueteria_21_01_flickr.jpg: 480x640 1 horse, 26.1ms
+image 213/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/jugueteria_21_03_flickr.jpg: 480x640 3 persons, 1 dog, 2 horses, 5 teddy bears, 24.8ms
+image 214/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/jugueteria_21_06_flickr.jpg: 480x640 2 elephants, 1 zebra, 7 teddy bears, 24.8ms
+image 215/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/jugueteria_21_11_flickr.jpg: 480x640 1 person, 1 chair, 25.1ms
+image 216/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/jugueteria_21_12_flickr.jpg: 480x640 2 persons, 25.0ms
+image 217/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/jugueteria_21_24_flickr.jpg: 640x480 2 persons, 1 dog, 1 elephant, 26.2ms
+image 218/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/jugueteria_22_10_flickr.jpg: 640x480 (no detections), 24.9ms
+image 219/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/jugueteria_22_14_flickr.jpg: 480x640 1 person, 2 dogs, 2 elephants, 2 teddy bears, 26.4ms
+image 220/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/jugueteria_23_18_flickr.jpg: 480x640 7 persons, 1 book, 24.9ms
+image 221/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/jugueteria_23_22_flickr.jpg: 480x640 3 persons, 2 dogs, 2 handbags, 25.0ms
+image 222/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/jugueteria_24_03_flickr.jpg: 480x640 2 cats, 2 dogs, 2 teddy bears, 25.0ms
+image 223/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/jugueteria_24_06_flickr.jpg: 480x640 1 person, 1 dog, 1 horse, 25.0ms
+image 224/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/jugueteria_24_15_flickr.jpg: 480x640 10 persons, 24.9ms
+image 225/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/jugueteria_24_22_flickr.jpg: 480x640 12 persons, 25.0ms
+image 226/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/jugueteria_25_08_yahoo.jpg: 480x640 3 persons, 1 dog, 1 horse, 1 elephant, 2 teddy bears, 24.8ms
+image 227/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/jugueteria_25_12_flickr.jpg: 640x480 3 persons, 1 handbag, 4 books, 26.1ms
+image 228/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/jugueteria_25_16_flickr.jpg: 640x480 1 person, 24.8ms
+image 229/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/keeling_market20.jpg: 640x640 5 persons, 1 teddy bear, 34.2ms
+image 230/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/kidonyc_store2.jpg: 640x640 2 persons, 1 bicycle, 3 dogs, 32.4ms
+image 231/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/lcb_museu_joguets.jpg: 640x640 1 person, 1 boat, 32.3ms
+image 232/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/le_guide_jouets_2007_14112006_500.jpg: 640x640 1 person, 5 books, 1 teddy bear, 32.7ms
+image 233/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/magasin.jpg: 480x640 1 person, 26.2ms
+image 234/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/magasin_jouet_13_11_altavista.jpg: 480x640 6 teddy bears, 24.8ms
+image 235/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/magasin_jouet_39_19_altavista.jpg: 480x640 1 refrigerator, 25.1ms
+image 236/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/magasin_jouet_index.jpg: 320x640 1 person, 30.1ms
+image 237/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/n1.jpg: 640x640 1 refrigerator, 34.1ms
+image 238/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/n10.jpg: 640x640 (no detections), 32.4ms
+image 239/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/n5.jpg: 640x640 (no detections), 32.5ms
+image 240/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/n6.jpg: 640x640 (no detections), 32.3ms
+image 241/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/n7.jpg: 640x640 (no detections), 32.5ms
+image 242/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/n8.jpg: 640x640 (no detections), 32.4ms
+image 243/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/n9.jpg: 640x640 2 persons, 32.5ms
+image 244/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/photo44.jpg: 640x640 1 person, 32.5ms
+image 245/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/r_5.jpg: 640x640 (no detections), 32.5ms
+image 246/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/south_haven_michigan_toy_educational_store4.jpg: 640x640 1 book, 32.2ms
+image 247/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/south_haven_michigan_toy_educational_store6.jpg: 640x640 1 book, 32.5ms
+image 248/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/speelgoed_05_08_yahoo.jpg: 640x480 1 bottle, 1 cake, 25.8ms
+image 249/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/speelgoed_09_15_altavista.jpg: 480x640 (no detections), 25.8ms
+image 250/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/speelgoed_11_08_altavista.jpg: 640x480 1 vase, 25.9ms
+image 251/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/speelgoed_13_03_flickr.jpg: 576x640 3 persons, 30.0ms
+image 252/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/speelgoed_15_15_yahoo.jpg: 480x640 4 persons, 25.9ms
+image 253/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/speelgoed_16_15_yahoo.jpg: 480x640 3 persons, 4 teddy bears, 25.0ms
+image 254/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/speelgoed_17_18_yahoo.jpg: 480x640 1 truck, 1 potted plant, 24.9ms
+image 255/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/speelgoed_35_12_altavista.jpg: 480x640 1 bottle, 25.1ms
+image 256/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/speelgoed_35_13_altavista.jpg: 480x640 1 potted plant, 24.9ms
+image 257/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/speelgoed_36_11_altavista.jpg: 480x640 (no detections), 25.1ms
+image 258/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/speelgoed_40_18_flickr.jpg: 448x640 2 bicycles, 1 teddy bear, 23.5ms
+image 259/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/speelgoed_40_20_flickr.jpg: 480x640 (no detections), 26.2ms
+image 260/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/speelgoed_45_01_flickr.jpg: 480x640 9 persons, 1 backpack, 1 chair, 24.9ms
+image 261/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/speelgoed_46_10_flickr.jpg: 480x640 3 persons, 24.9ms
+image 262/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/speelgoed_54_22_flickr.jpg: 480x640 4 persons, 1 umbrella, 25.1ms
+image 263/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/speelgoed_55_18_flickr.jpg: 480x640 (no detections), 25.1ms
+image 264/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/speelgoed_58_02_flickr.jpg: 448x640 1 person, 1 bottle, 23.4ms
+image 265/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/speelgoed_58_24_flickr.jpg: 480x640 1 cup, 1 chair, 1 book, 1 teddy bear, 26.2ms
+image 266/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/speelgoed_65_24_flickr.jpg: 480x640 4 persons, 25.0ms
+image 267/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/speelgoed_66_02_flickr.jpg: 480x640 1 person, 25.0ms
+image 268/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/speelgoed_66_08_flickr.jpg: 480x640 (no detections), 24.9ms
+image 269/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/speelgoed_68_08_flickr.jpg: 480x640 1 person, 1 clock, 25.0ms
+image 270/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/speelgoed_78_15_flickr.jpg: 480x640 10 persons, 1 bowl, 1 teddy bear, 24.9ms
+image 271/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/spider_knife_low.jpg: 640x640 1 person, 1 umbrella, 33.6ms
+image 272/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/store3sm.jpg: 640x640 (no detections), 32.2ms
+image 273/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/store_infant.jpg: 640x640 (no detections), 32.7ms
+image 274/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/store_infant8.jpg: 640x640 (no detections), 32.4ms
+image 275/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/store_thomas.jpg: 640x640 1 clock, 32.4ms
+image 276/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/storeinside.jpg: 640x640 (no detections), 32.4ms
+image 277/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/storeinside89.jpg: 640x640 (no detections), 32.4ms
+image 278/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/tb_store3.jpg: 640x640 1 person, 32.5ms
+image 279/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/tienda1.jpg: 448x640 1 refrigerator, 1 vase, 23.6ms
+image 280/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/toys.jpg: 640x640 1 car, 1 sports ball, 1 teddy bear, 34.2ms
+image 281/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/toys18.jpg: 640x640 1 person, 4 cars, 5 buss, 1 cell phone, 32.5ms
+image 282/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/toys_japan.jpg: 640x640 (no detections), 32.5ms
+image 283/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/toys_store_01_06_altavista.jpg: 512x640 (no detections), 27.6ms
+image 284/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/toys_store_01_08_altavista.jpg: 512x640 1 cat, 1 dog, 26.4ms
+image 285/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/toys_store_01_09_altavista.jpg: 512x640 (no detections), 26.3ms
+image 286/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/toys_store_01_09_flickr.jpg: 448x640 9 teddy bears, 23.4ms
+image 287/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/toys_store_01_13_altavista.jpg: 480x640 4 persons, 1 book, 1 clock, 26.2ms
+image 288/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/toys_store_01_23_flickr.jpg: 448x640 3 bottles, 2 teddy bears, 23.4ms
+image 289/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/toys_store_02_06_altavista.jpg: 480x640 (no detections), 26.3ms
+image 290/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/toys_store_03_10_altavista.jpg: 640x480 1 sink, 1 vase, 26.1ms
+image 291/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/toys_store_03_18_altavista.jpg: 480x640 1 bottle, 2 teddy bears, 26.2ms
+image 292/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/toys_store_03_20_altavista.jpg: 480x640 (no detections), 25.1ms
+image 293/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/toys_store_04_01_altavista.jpg: 480x640 1 person, 1 clock, 25.0ms
+image 294/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/toys_store_06_08_altavista.jpg: 480x640 2 books, 24.9ms
+image 295/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/toys_store_06_15_altavista.jpg: 480x640 2 persons, 1 handbag, 25.0ms
+image 296/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/toys_store_07_02_altavista.jpg: 640x480 1 cake, 26.2ms
+image 297/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/toys_store_07_14_altavista.jpg: 480x640 (no detections), 25.9ms
+image 298/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/toys_store_09_02_altavista.jpg: 512x640 (no detections), 27.5ms
+image 299/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/toys_store_12_04_altavista.jpg: 480x640 (no detections), 26.2ms
+image 300/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/toys_store_12_18_altavista.jpg: 448x640 3 persons, 1 clock, 23.6ms
+image 301/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/toys_store_14_07_altavista.jpg: 640x640 1 suitcase, 33.6ms
+image 302/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/toys_store_14_11_altavista.jpg: 640x544 2 books, 29.9ms
+image 303/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/toys_store_14_12_altavista.jpg: 640x480 1 refrigerator, 3 books, 26.2ms
+image 304/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/toys_store_14_14_altavista.jpg: 640x480 3 persons, 25.0ms
+image 305/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/toys_store_14_15_altavista.jpg: 640x480 (no detections), 24.9ms
+image 306/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/toys_store_16_01_altavista.jpg: 640x448 4 persons, 1 tie, 24.8ms
+image 307/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/toys_store_16_05_altavista.jpg: 480x640 1 tv, 26.4ms
+image 308/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/toys_store_18_02_altavista.jpg: 480x640 3 clocks, 24.9ms
+image 309/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/toys_store_19_12_altavista.jpg: 512x640 (no detections), 27.5ms
+image 310/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/toys_store_19_14_altavista.jpg: 640x448 2 persons, 24.7ms
+image 311/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/toys_store_21_19_altavista.jpg: 640x544 (no detections), 29.4ms
+image 312/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/toys_store_22_06_altavista.jpg: 480x640 1 book, 1 clock, 26.0ms
+image 313/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/toys_store_22_11_altavista.jpg: 448x640 1 suitcase, 23.5ms
+image 314/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/toys_store_23_01_altavista.jpg: 480x640 (no detections), 26.2ms
+image 315/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/toys_store_23_02_altavista.jpg: 480x640 (no detections), 25.1ms
+image 316/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/toys_store_23_03_altavista.jpg: 480x640 2 persons, 1 clock, 25.0ms
+image 317/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/toys_store_23_18_altavista.jpg: 320x640 1 person, 1 chair, 27.9ms
+image 318/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/toys_store_23_20_altavista.jpg: 352x640 1 chair, 28.8ms
+image 319/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/toys_store_24_03_altavista.jpg: 416x640 (no detections), 22.6ms
+image 320/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/toys_store_26_12_altavista.jpg: 640x480 1 chair, 26.2ms
+image 321/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/toys_store_27_05_altavista.jpg: 512x640 1 car, 1 motorcycle, 1 fire hydrant, 27.7ms
+image 322/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/toys_store_27_18_altavista.jpg: 320x640 2 teddy bears, 28.5ms
+image 323/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/toys_store_27_19_altavista.jpg: 480x640 (no detections), 26.5ms
+image 324/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/toys_store_31_04_altavista.jpg: 480x640 1 bottle, 1 chair, 1 potted plant, 1 vase, 25.0ms
+image 325/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/toys_store_34_02_altavista.jpg: 640x480 1 apple, 1 orange, 1 clock, 26.0ms
+image 326/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/toys_store_34_07_altavista.jpg: 512x640 (no detections), 27.6ms
+image 327/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/toys_store_35_03_altavista.jpg: 448x640 1 book, 23.4ms
+image 328/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/toys_store_36_07_altavista.jpg: 480x640 2 motorcycles, 26.3ms
+image 329/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/toys_store_37_06_altavista.jpg: 512x640 2 chairs, 2 dining tables, 27.7ms
+image 330/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/toys_store_41_15_altavista.jpg: 512x640 3 persons, 26.3ms
+image 331/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/toys_store_41_20_altavista.jpg: 512x640 1 person, 1 bowl, 26.4ms
+image 332/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/toys_store_42_11_altavista.jpg: 480x640 2 persons, 4 books, 26.1ms
+image 333/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/toys_store_43_03_altavista.jpg: 416x640 1 person, 2 chairs, 22.6ms
+image 334/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/toys_store_43_05_altavista.jpg: 416x640 2 persons, 1 chair, 21.6ms
+image 335/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/toys_store_43_15_altavista.jpg: 480x640 2 persons, 1 chair, 2 books, 25.9ms
+image 336/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/toys_store_44_03_altavista.jpg: 640x448 1 tie, 24.5ms
+image 337/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/toys_store_45_05_altavista.jpg: 640x384 (no detections), 30.0ms
+image 338/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/toys_store_45_15_altavista.jpg: 480x640 3 persons, 8 chairs, 1 refrigerator, 1 clock, 26.2ms
+image 339/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/toys_store_45_17_altavista.jpg: 640x512 (no detections), 27.0ms
+image 340/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/toys_store_45_18_altavista.jpg: 640x576 1 bottle, 30.4ms
+image 341/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/toys_store_47_02_altavista.jpg: 608x640 (no detections), 31.7ms
+image 342/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/toys_store_48_16_altavista.jpg: 640x512 2 bottles, 2 bowls, 26.7ms
+image 343/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/toys_store_51_04_altavista.jpg: 608x640 (no detections), 32.2ms
+image 344/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/toystoregreat.jpg: 640x640 (no detections), 33.6ms
+image 345/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/url.jpg: 480x640 10 persons, 25.7ms
+image 346/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/url4.jpg: 640x640 (no detections), 34.1ms
+image 347/347 /media/mason/DATA/Users/Mason Francis/Downloads/indoorCVPR_09/Images/toystore/url56.jpg: 640x640 1 truck, 32.4ms
+Speed: 2.8ms preprocess, 27.2ms inference, 2.3ms postprocess per image at shape (1, 3, 640, 640)
+Results saved to [1m/home/mason/Descargas/yolov5/runs/detect/predict2[0m
+💡 Learn more at https://docs.ultralytics.com/modes/predict
