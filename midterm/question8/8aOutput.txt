@@ -1,0 +1,347 @@
+Image: 0797089377f6f45f3278042aa1d0631d.jpg, Predicted Label: tobacco shop
+Image: 109_0940.jpg, Predicted Label: toyshop
+Image: 114.jpg, Predicted Label: toyshop
+Image: 1164876979_0.jpg, Predicted Label: toyshop
+Image: 1179833350_ee00fb9367.jpg, Predicted Label: toyshop
+Image: 12.jpg, Predicted Label: toyshop
+Image: 1486958865_ba21d9acab.jpg, Predicted Label: toyshop
+Image: 1529445456_acec85121f.jpg, Predicted Label: toyshop
+Image: 165.jpg, Predicted Label: toyshop
+Image: 177.jpg, Predicted Label: toyshop
+Image: 20070828052224875.jpg, Predicted Label: toyshop
+Image: 213289035_28528f86e0.jpg, Predicted Label: grocery store
+Image: 2406613103_e9ee362f6c.jpg, Predicted Label: toyshop
+Image: 2406613109_79a9a378ff.jpg, Predicted Label: toyshop
+Image: 245006402_b27063dfcd.jpg, Predicted Label: grocery store
+Image: 250507130dh3.jpg, Predicted Label: stretcher
+Image: 2610497_164b173c1b.jpg, Predicted Label: toyshop
+Image: 262507104_bfa08ef897.jpg, Predicted Label: pool table
+Image: 262507231_b0203fd5aa.jpg, Predicted Label: packet
+Image: 262508526_93634b3c2c.jpg, Predicted Label: toyshop
+Image: 281568964_bb524a3c9e_o.jpg, Predicted Label: toyshop
+Image: 2863560_5e41fa6652.jpg, Predicted Label: toyshop
+Image: 286605441_d9919621ce.jpg, Predicted Label: toyshop
+Image: 299724113_39b3a2b7f8.jpg, Predicted Label: toyshop
+Image: 305015506_6df5016b5c.jpg, Predicted Label: toyshop
+Image: 322626923_b365feb0e6.jpg, Predicted Label: toyshop
+Image: 322627515_6a6372d7a5.jpg, Predicted Label: toyshop
+Image: 42599209_9be8f72d18.jpg, Predicted Label: toyshop
+Image: 5.jpg, Predicted Label: toyshop
+Image: 50224341945f7e87bd1af8.jpg, Predicted Label: tobacco shop
+Image: 59516206_45f74119d6.jpg, Predicted Label: tobacco shop
+Image: 7.jpg, Predicted Label: toyshop
+Image: CIMG0305.jpg, Predicted Label: toyshop
+Image: CIMG3313.jpg, Predicted Label: confectionery
+Image: IMG_0198_Asakusa_toy_store.jpg, Predicted Label: toyshop
+Image: IMG_2603.jpg, Predicted Label: toyshop
+Image: Image13852843.jpg, Predicted Label: toyshop
+Image: Image75.jpg, Predicted Label: toyshop
+Image: Image_803_.jpg, Predicted Label: grocery store
+Image: InsideofStore.jpg, Predicted Label: toyshop
+Image: JapaneseToyStore_1200W.jpg, Predicted Label: toyshop
+Image: KING_JOUET_5_2_6a484.jpg, Predicted Label: toyshop
+Image: Milliwiggins_003.jpg, Predicted Label: toyshop
+Image: P1020153.jpg, Predicted Label: toyshop
+Image: PICT0004_png.jpg, Predicted Label: toyshop
+Image: PICT0009.jpg, Predicted Label: toyshop
+Image: Peluqueria_043.jpg, Predicted Label: toyshop
+Image: QuienesSomos.jpg, Predicted Label: library
+Image: RESIDENCIA_008.jpg, Predicted Label: library
+Image: SANY0070.jpg, Predicted Label: toyshop
+Image: STG57558.jpg, Predicted Label: toyshop
+Image: Spielzeug_02_13_yahoo.jpg, Predicted Label: library
+Image: Spielzeug_04_06_yahoo.jpg, Predicted Label: barbershop
+Image: Spielzeug_04_07_yahoo.jpg, Predicted Label: altar
+Image: Spielzeug_05_06_yahoo.jpg, Predicted Label: shoe shop
+Image: Spielzeug_101_24_flickr.jpg, Predicted Label: rubber eraser
+Image: Spielzeug_11_18_yahoo.jpg, Predicted Label: confectionery
+Image: Spielzeug_123_17_flickr.jpg, Predicted Label: desk
+Image: Spielzeug_12_23_flickr.jpg, Predicted Label: comic book
+Image: Spielzeug_13_18_flickr.jpg, Predicted Label: toyshop
+Image: Spielzeug_145_06_flickr.jpg, Predicted Label: refrigerator
+Image: Spielzeug_145_12_flickr.jpg, Predicted Label: toyshop
+Image: Spielzeug_147_08_flickr.jpg, Predicted Label: dining table
+Image: Spielzeug_147_10_flickr.jpg, Predicted Label: tobacco shop
+Image: Spielzeug_14_02_flickr.jpg, Predicted Label: toyshop
+Image: Spielzeug_14_08_yahoo.jpg, Predicted Label: bannister
+Image: Spielzeug_14_21_flickr.jpg, Predicted Label: grocery store
+Image: Spielzeug_150_02_flickr.jpg, Predicted Label: coffeepot
+Image: Spielzeug_150_18_flickr.jpg, Predicted Label: china cabinet
+Image: Spielzeug_152_01_flickr.jpg, Predicted Label: stretcher
+Image: Spielzeug_15_13_yahoo.jpg, Predicted Label: toyshop
+Image: Spielzeug_163_23_flickr.jpg, Predicted Label: tobacco shop
+Image: Spielzeug_167_11_flickr.jpg, Predicted Label: toyshop
+Image: Spielzeug_168_24_flickr.jpg, Predicted Label: toyshop
+Image: Spielzeug_18_01_flickr.jpg, Predicted Label: toyshop
+Image: Spielzeug_19_20_altavista.jpg, Predicted Label: toyshop
+Image: Spielzeug_21_21_flickr.jpg, Predicted Label: tank
+Image: Spielzeug_22_08_yahoo.jpg, Predicted Label: toyshop
+Image: Spielzeug_24_11_altavista.jpg, Predicted Label: toyshop
+Image: Spielzeug_25_14_yahoo.jpg, Predicted Label: tobacco shop
+Image: Spielzeug_26_24_flickr.jpg, Predicted Label: toyshop
+Image: Spielzeug_28_23_flickr.jpg, Predicted Label: library
+Image: Spielzeug_29_02_flickr.jpg, Predicted Label: toyshop
+Image: Spielzeug_29_08_flickr.jpg, Predicted Label: carousel
+Image: Spielzeug_31_06_yahoo.jpg, Predicted Label: racer
+Image: Spielzeug_31_19_flickr.jpg, Predicted Label: toyshop
+Image: Spielzeug_32_14_flickr.jpg, Predicted Label: toyshop
+Image: Spielzeug_35_09_flickr.jpg, Predicted Label: tank
+Image: Spielzeug_35_10_yahoo.jpg, Predicted Label: toyshop
+Image: Spielzeug_41_05_flickr.jpg, Predicted Label: confectionery
+Image: Spielzeug_41_09_flickr.jpg, Predicted Label: toyshop
+Image: Spielzeug_41_18_yahoo.jpg, Predicted Label: carousel
+Image: Spielzeug_48_19_yahoo.jpg, Predicted Label: toyshop
+Image: Spielzeug_50_15_flickr.jpg, Predicted Label: grocery store
+Image: Spielzeug_56_08_flickr.jpg, Predicted Label: stage
+Image: Spielzeug_56_09_flickr.jpg, Predicted Label: toyshop
+Image: Spielzeug_58_01_flickr.jpg, Predicted Label: toyshop
+Image: Spielzeug_62_10_flickr.jpg, Predicted Label: grocery store
+Image: Spielzeug_62_21_flickr.jpg, Predicted Label: grocery store
+Image: Spielzeug_70_20_flickr.jpg, Predicted Label: toyshop
+Image: Spielzeug_75_04_flickr.jpg, Predicted Label: toyshop
+Image: Spielzeug_83_03_flickr.jpg, Predicted Label: toyshop
+Image: Spielzeug_84_23_flickr.jpg, Predicted Label: toyshop
+Image: Spielzeug_85_23_flickr.jpg, Predicted Label: toyshop
+Image: Spielzeug_87_07_flickr.jpg, Predicted Label: shoe shop
+Image: ToyStoreLg.jpg, Predicted Label: toyshop
+Image: UMW_Rummage_Before_Boutique_with_dolls_780356.jpg, Predicted Label: toyshop
+Image: Zona_juguetes.jpg, Predicted Label: toyshop
+Image: a1_toystore1.jpg, Predicted Label: toyshop
+Image: a1_toystore2.jpg, Predicted Label: toyshop
+Image: a1_toystore3.jpg, Predicted Label: toyshop
+Image: b1852.jpg, Predicted Label: toyshop
+Image: com0407_SSALUD.jpg, Predicted Label: toyshop
+Image: company02.jpg, Predicted Label: toyshop
+Image: d4k_002.jpg, Predicted Label: toyshop
+Image: d4k_004.jpg, Predicted Label: toyshop
+Image: d4k_006.jpg, Predicted Label: toyshop
+Image: d4k_007.jpg, Predicted Label: toyshop
+Image: dscf0478172.jpg, Predicted Label: toyshop
+Image: eurekakids_tienda_2.jpg, Predicted Label: toyshop
+Image: foto_minori_per_museo_dreoni_2.jpg, Predicted Label: cassette
+Image: fotonuoven80_122.jpg, Predicted Label: toyshop
+Image: giocattolo_09_07_flickr.jpg, Predicted Label: toyshop
+Image: giocattolo_12_13_altavista.jpg, Predicted Label: toyshop
+Image: giocattolo_32_19_altavista.jpg, Predicted Label: rotisserie
+Image: giocattolo_49_02_flickr.jpg, Predicted Label: toyshop
+Image: giocattolo_52_03_flickr.jpg, Predicted Label: toyshop
+Image: giocattolo_57_16_flickr.jpg, Predicted Label: loudspeaker
+Image: giocattolo_57_19_flickr.jpg, Predicted Label: vending machine
+Image: gs_toyrm_lg.jpg, Predicted Label: toyshop
+Image: gs_toys_lg.jpg, Predicted Label: toyshop
+Image: gs_ty_lg.jpg, Predicted Label: toyshop
+Image: hracka_01_21_flickr.jpg, Predicted Label: confectionery
+Image: hracka_04_11_yahoo.jpg, Predicted Label: restaurant
+Image: im001031.jpg, Predicted Label: toyshop
+Image: im001034.jpg, Predicted Label: tobacco shop
+Image: img_29916_t.jpg, Predicted Label: toyshop
+Image: imgp0927web.jpg, Predicted Label: toyshop
+Image: jouets3.jpg, Predicted Label: toyshop
+Image: jouets5.jpg, Predicted Label: toyshop
+Image: juguete_con_plomo.jpg, Predicted Label: toyshop
+Image: jugueteria_01_01_flickr.jpg, Predicted Label: confectionery
+Image: jugueteria_01_03_yahoo.jpg, Predicted Label: toyshop
+Image: jugueteria_01_07_yahoo.jpg, Predicted Label: toyshop
+Image: jugueteria_01_14_altavista.jpg, Predicted Label: toyshop
+Image: jugueteria_01_17_flickr.jpg, Predicted Label: cash machine
+Image: jugueteria_02_08_altavista.jpg, Predicted Label: shopping basket
+Image: jugueteria_02_10_altavista.jpg, Predicted Label: toyshop
+Image: jugueteria_02_15_flickr.jpg, Predicted Label: toyshop
+Image: jugueteria_02_22_flickr.jpg, Predicted Label: sunglasses
+Image: jugueteria_03_04_flickr.jpg, Predicted Label: toyshop
+Image: jugueteria_03_04_yahoo.jpg, Predicted Label: gondola
+Image: jugueteria_03_11_flickr.jpg, Predicted Label: butcher shop
+Image: jugueteria_03_12_flickr.jpg, Predicted Label: bookshop
+Image: jugueteria_04_03_flickr.jpg, Predicted Label: toyshop
+Image: jugueteria_04_07_yahoo.jpg, Predicted Label: toyshop
+Image: jugueteria_04_10_altavista.jpg, Predicted Label: tobacco shop
+Image: jugueteria_04_24_flickr.jpg, Predicted Label: bookcase
+Image: jugueteria_05_02_flickr.jpg, Predicted Label: grocery store
+Image: jugueteria_05_03_flickr.jpg, Predicted Label: toyshop
+Image: jugueteria_05_17_flickr.jpg, Predicted Label: slot
+Image: jugueteria_06_08_flickr.jpg, Predicted Label: toyshop
+Image: jugueteria_06_21_flickr.jpg, Predicted Label: toyshop
+Image: jugueteria_06_22_flickr.jpg, Predicted Label: shoe shop
+Image: jugueteria_07_08_yahoo.jpg, Predicted Label: grocery store
+Image: jugueteria_07_15_flickr.jpg, Predicted Label: toyshop
+Image: jugueteria_08_02_flickr.jpg, Predicted Label: toyshop
+Image: jugueteria_08_05_flickr.jpg, Predicted Label: toyshop
+Image: jugueteria_08_09_yahoo.jpg, Predicted Label: toyshop
+Image: jugueteria_08_10_altavista.jpg, Predicted Label: library
+Image: jugueteria_08_10_yahoo.jpg, Predicted Label: toyshop
+Image: jugueteria_08_21_flickr.jpg, Predicted Label: toyshop
+Image: jugueteria_09_01_flickr.jpg, Predicted Label: grocery store
+Image: jugueteria_09_06_flickr.jpg, Predicted Label: toyshop
+Image: jugueteria_09_14_yahoo.jpg, Predicted Label: restaurant
+Image: jugueteria_09_22_flickr.jpg, Predicted Label: toyshop
+Image: jugueteria_09_24_flickr.jpg, Predicted Label: toyshop
+Image: jugueteria_10_03_flickr.jpg, Predicted Label: toyshop
+Image: jugueteria_10_10_flickr.jpg, Predicted Label: toyshop
+Image: jugueteria_10_17_yahoo.jpg, Predicted Label: comic book
+Image: jugueteria_11_11_yahoo.jpg, Predicted Label: confectionery
+Image: jugueteria_11_12_yahoo.jpg, Predicted Label: toyshop
+Image: jugueteria_14_06_flickr.jpg, Predicted Label: toyshop
+Image: jugueteria_14_15_flickr.jpg, Predicted Label: umbrella
+Image: jugueteria_14_24_flickr.jpg, Predicted Label: toyshop
+Image: jugueteria_15_09_flickr.jpg, Predicted Label: kuvasz
+Image: jugueteria_15_10_flickr.jpg, Predicted Label: toyshop
+Image: jugueteria_15_13_flickr.jpg, Predicted Label: toyshop
+Image: jugueteria_16_03_flickr.jpg, Predicted Label: warplane
+Image: jugueteria_16_04_flickr.jpg, Predicted Label: vizsla
+Image: jugueteria_16_08_flickr.jpg, Predicted Label: toyshop
+Image: jugueteria_16_09_flickr.jpg, Predicted Label: toyshop
+Image: jugueteria_16_14_flickr.jpg, Predicted Label: toyshop
+Image: jugueteria_16_16_flickr.jpg, Predicted Label: shoe shop
+Image: jugueteria_16_18_flickr.jpg, Predicted Label: stage
+Image: jugueteria_16_19_flickr.jpg, Predicted Label: toyshop
+Image: jugueteria_16_21_flickr.jpg, Predicted Label: toyshop
+Image: jugueteria_16_22_flickr.jpg, Predicted Label: toyshop
+Image: jugueteria_17_01_flickr.jpg, Predicted Label: confectionery
+Image: jugueteria_17_09_flickr.jpg, Predicted Label: toyshop
+Image: jugueteria_17_14_yahoo.jpg, Predicted Label: tobacco shop
+Image: jugueteria_17_15_flickr.jpg, Predicted Label: jean
+Image: jugueteria_18_12_flickr.jpg, Predicted Label: gondola
+Image: jugueteria_18_13_flickr.jpg, Predicted Label: screw
+Image: jugueteria_18_23_flickr.jpg, Predicted Label: shoe shop
+Image: jugueteria_19_01_flickr.jpg, Predicted Label: toyshop
+Image: jugueteria_19_14_flickr.jpg, Predicted Label: toyshop
+Image: jugueteria_19_18_flickr.jpg, Predicted Label: punching bag
+Image: jugueteria_19_22_flickr.jpg, Predicted Label: bookshop
+Image: jugueteria_20_11_flickr.jpg, Predicted Label: tobacco shop
+Image: jugueteria_20_21_flickr.jpg, Predicted Label: shoe shop
+Image: jugueteria_21_01_flickr.jpg, Predicted Label: toyshop
+Image: jugueteria_21_03_flickr.jpg, Predicted Label: toyshop
+Image: jugueteria_21_06_flickr.jpg, Predicted Label: toyshop
+Image: jugueteria_21_11_flickr.jpg, Predicted Label: tobacco shop
+Image: jugueteria_21_12_flickr.jpg, Predicted Label: toyshop
+Image: jugueteria_21_24_flickr.jpg, Predicted Label: grocery store
+Image: jugueteria_22_10_flickr.jpg, Predicted Label: toyshop
+Image: jugueteria_22_14_flickr.jpg, Predicted Label: albatross
+Image: jugueteria_23_18_flickr.jpg, Predicted Label: toyshop
+Image: jugueteria_23_22_flickr.jpg, Predicted Label: bloodhound
+Image: jugueteria_24_03_flickr.jpg, Predicted Label: toyshop
+Image: jugueteria_24_06_flickr.jpg, Predicted Label: Italian greyhound
+Image: jugueteria_24_15_flickr.jpg, Predicted Label: restaurant
+Image: jugueteria_24_22_flickr.jpg, Predicted Label: toyshop
+Image: jugueteria_25_08_yahoo.jpg, Predicted Label: parallel bars
+Image: jugueteria_25_12_flickr.jpg, Predicted Label: triceratops
+Image: jugueteria_25_16_flickr.jpg, Predicted Label: grocery store
+Image: keeling_market20.jpg, Predicted Label: toyshop
+Image: kidonyc_store2.jpg, Predicted Label: medicine chest
+Image: lcb_museu_joguets.jpg, Predicted Label: barbershop
+Image: le_guide_jouets_2007_14112006_500.jpg, Predicted Label: toyshop
+Image: magasin.jpg, Predicted Label: toyshop
+Image: magasin_jouet_13_11_altavista.jpg, Predicted Label: toyshop
+Image: magasin_jouet_39_19_altavista.jpg, Predicted Label: toyshop
+Image: magasin_jouet_index.jpg, Predicted Label: toyshop
+Image: n1.jpg, Predicted Label: tobacco shop
+Image: n10.jpg, Predicted Label: grocery store
+Image: n5.jpg, Predicted Label: tobacco shop
+Image: n6.jpg, Predicted Label: toyshop
+Image: n7.jpg, Predicted Label: tobacco shop
+Image: n8.jpg, Predicted Label: toyshop
+Image: n9.jpg, Predicted Label: toyshop
+Image: photo44.jpg, Predicted Label: grocery store
+Image: r_5.jpg, Predicted Label: toyshop
+Image: south_haven_michigan_toy_educational_store4.jpg, Predicted Label: tobacco shop
+Image: south_haven_michigan_toy_educational_store6.jpg, Predicted Label: comic book
+Image: speelgoed_05_08_yahoo.jpg, Predicted Label: refrigerator
+Image: speelgoed_09_15_altavista.jpg, Predicted Label: toyshop
+Image: speelgoed_11_08_altavista.jpg, Predicted Label: toyshop
+Image: speelgoed_13_03_flickr.jpg, Predicted Label: shoe shop
+Image: speelgoed_15_15_yahoo.jpg, Predicted Label: toyshop
+Image: speelgoed_16_15_yahoo.jpg, Predicted Label: toyshop
+Image: speelgoed_17_18_yahoo.jpg, Predicted Label: grocery store
+Image: speelgoed_35_12_altavista.jpg, Predicted Label: toyshop
+Image: speelgoed_35_13_altavista.jpg, Predicted Label: toyshop
+Image: speelgoed_36_11_altavista.jpg, Predicted Label: confectionery
+Image: speelgoed_40_18_flickr.jpg, Predicted Label: tobacco shop
+Image: speelgoed_40_20_flickr.jpg, Predicted Label: library
+Image: speelgoed_45_01_flickr.jpg, Predicted Label: grocery store
+Image: speelgoed_46_10_flickr.jpg, Predicted Label: grocery store
+Image: speelgoed_54_22_flickr.jpg, Predicted Label: toyshop
+Image: speelgoed_55_18_flickr.jpg, Predicted Label: bakery
+Image: speelgoed_58_02_flickr.jpg, Predicted Label: toyshop
+Image: speelgoed_58_24_flickr.jpg, Predicted Label: toyshop
+Image: speelgoed_65_24_flickr.jpg, Predicted Label: toyshop
+Image: speelgoed_66_02_flickr.jpg, Predicted Label: shoe shop
+Image: speelgoed_66_08_flickr.jpg, Predicted Label: toyshop
+Image: speelgoed_68_08_flickr.jpg, Predicted Label: toyshop
+Image: speelgoed_78_15_flickr.jpg, Predicted Label: grocery store
+Image: spider_knife_low.jpg, Predicted Label: balance beam
+Image: store3sm.jpg, Predicted Label: toyshop
+Image: store_infant.jpg, Predicted Label: toyshop
+Image: store_infant8.jpg, Predicted Label: toyshop
+Image: store_thomas.jpg, Predicted Label: tobacco shop
+Image: storeinside.jpg, Predicted Label: toyshop
+Image: storeinside89.jpg, Predicted Label: toyshop
+Image: tb_store3.jpg, Predicted Label: toyshop
+Image: tienda1.jpg, Predicted Label: toyshop
+Image: toys.jpg, Predicted Label: toyshop
+Image: toys18.jpg, Predicted Label: comic book
+Image: toys_japan.jpg, Predicted Label: toyshop
+Image: toys_store_01_06_altavista.jpg, Predicted Label: toyshop
+Image: toys_store_01_08_altavista.jpg, Predicted Label: llama
+Image: toys_store_01_09_altavista.jpg, Predicted Label: tobacco shop
+Image: toys_store_01_09_flickr.jpg, Predicted Label: toyshop
+Image: toys_store_01_13_altavista.jpg, Predicted Label: comic book
+Image: toys_store_01_23_flickr.jpg, Predicted Label: toyshop
+Image: toys_store_02_06_altavista.jpg, Predicted Label: toyshop
+Image: toys_store_03_10_altavista.jpg, Predicted Label: toyshop
+Image: toys_store_03_18_altavista.jpg, Predicted Label: bookshop
+Image: toys_store_03_20_altavista.jpg, Predicted Label: toyshop
+Image: toys_store_04_01_altavista.jpg, Predicted Label: toyshop
+Image: toys_store_06_08_altavista.jpg, Predicted Label: toyshop
+Image: toys_store_06_15_altavista.jpg, Predicted Label: toyshop
+Image: toys_store_07_02_altavista.jpg, Predicted Label: toyshop
+Image: toys_store_07_14_altavista.jpg, Predicted Label: toyshop
+Image: toys_store_09_02_altavista.jpg, Predicted Label: toyshop
+Image: toys_store_12_04_altavista.jpg, Predicted Label: grocery store
+Image: toys_store_12_18_altavista.jpg, Predicted Label: toyshop
+Image: toys_store_14_07_altavista.jpg, Predicted Label: toyshop
+Image: toys_store_14_11_altavista.jpg, Predicted Label: bookshop
+Image: toys_store_14_12_altavista.jpg, Predicted Label: bookcase
+Image: toys_store_14_14_altavista.jpg, Predicted Label: bonnet
+Image: toys_store_14_15_altavista.jpg, Predicted Label: toyshop
+Image: toys_store_16_01_altavista.jpg, Predicted Label: grocery store
+Image: toys_store_16_05_altavista.jpg, Predicted Label: tobacco shop
+Image: toys_store_18_02_altavista.jpg, Predicted Label: toyshop
+Image: toys_store_19_12_altavista.jpg, Predicted Label: grocery store
+Image: toys_store_19_14_altavista.jpg, Predicted Label: bakery
+Image: toys_store_21_19_altavista.jpg, Predicted Label: tobacco shop
+Image: toys_store_22_06_altavista.jpg, Predicted Label: toyshop
+Image: toys_store_22_11_altavista.jpg, Predicted Label: library
+Image: toys_store_23_01_altavista.jpg, Predicted Label: toyshop
+Image: toys_store_23_02_altavista.jpg, Predicted Label: toyshop
+Image: toys_store_23_03_altavista.jpg, Predicted Label: toyshop
+Image: toys_store_23_18_altavista.jpg, Predicted Label: tobacco shop
+Image: toys_store_23_20_altavista.jpg, Predicted Label: library
+Image: toys_store_24_03_altavista.jpg, Predicted Label: tobacco shop
+Image: toys_store_26_12_altavista.jpg, Predicted Label: tobacco shop
+Image: toys_store_27_05_altavista.jpg, Predicted Label: teapot
+Image: toys_store_27_18_altavista.jpg, Predicted Label: toyshop
+Image: toys_store_27_19_altavista.jpg, Predicted Label: toyshop
+Image: toys_store_31_04_altavista.jpg, Predicted Label: toyshop
+Image: toys_store_34_02_altavista.jpg, Predicted Label: toyshop
+Image: toys_store_34_07_altavista.jpg, Predicted Label: bookshop
+Image: toys_store_35_03_altavista.jpg, Predicted Label: toyshop
+Image: toys_store_36_07_altavista.jpg, Predicted Label: grocery store
+Image: toys_store_37_06_altavista.jpg, Predicted Label: library
+Image: toys_store_41_15_altavista.jpg, Predicted Label: grocery store
+Image: toys_store_41_20_altavista.jpg, Predicted Label: tobacco shop
+Image: toys_store_42_11_altavista.jpg, Predicted Label: toyshop
+Image: toys_store_43_03_altavista.jpg, Predicted Label: restaurant
+Image: toys_store_43_05_altavista.jpg, Predicted Label: toyshop
+Image: toys_store_43_15_altavista.jpg, Predicted Label: tobacco shop
+Image: toys_store_44_03_altavista.jpg, Predicted Label: toyshop
+Image: toys_store_45_05_altavista.jpg, Predicted Label: bookcase
+Image: toys_store_45_15_altavista.jpg, Predicted Label: library
+Image: toys_store_45_17_altavista.jpg, Predicted Label: grocery store
+Image: toys_store_45_18_altavista.jpg, Predicted Label: grocery store
+Image: toys_store_47_02_altavista.jpg, Predicted Label: bookcase
+Image: toys_store_48_16_altavista.jpg, Predicted Label: confectionery
+Image: toys_store_51_04_altavista.jpg, Predicted Label: toyshop
+Image: toystoregreat.jpg, Predicted Label: toyshop
+Image: url.jpg, Predicted Label: toyshop
+Image: url4.jpg, Predicted Label: toyshop
+Image: url56.jpg, Predicted Label: toyshop
