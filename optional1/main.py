@@ -1,6 +1,4 @@
 import cv2 
-import numpy as np 
-from matplotlib import pyplot as plt 
   
 # reading image 
 img = cv2.imread('shapes.png') 
@@ -42,19 +40,19 @@ for contour in contours:
     # putting shape name at center of each shape 
     if len(approx) == 3: 
         cv2.putText(img, 'Triangle', (x, y), 
-                    cv2.FONT_HERSHEY_SIMPLEX, 0.6, (255, 255, 255), 2) 
+                    cv2.FONT_HERSHEY_SIMPLEX, 0.4, (255, 255, 255), 2) 
   
     elif len(approx) == 4: 
         cv2.putText(img, 'Quadrilateral', (x, y), 
-                    cv2.FONT_HERSHEY_SIMPLEX, 0.6, (255, 255, 255), 2) 
+                    cv2.FONT_HERSHEY_SIMPLEX, 0.4, (255, 255, 255), 2) 
   
     elif len(approx) == 5: 
-        cv2.putText(img, 'Pentagon', (x, y), 
-                    cv2.FONT_HERSHEY_SIMPLEX, 0.6, (255, 255, 255), 2) 
+        cv2.putText(img, 'Pentagon', (x-1, y), 
+                    cv2.FONT_HERSHEY_SIMPLEX, 0.4, (255, 255, 255), 2) 
   
     elif len(approx) == 6: 
         cv2.putText(img, 'Hexagon', (x, y), 
-                    cv2.FONT_HERSHEY_SIMPLEX, 0.6, (255, 255, 255), 2) 
+                    cv2.FONT_HERSHEY_SIMPLEX, 0.4, (255, 255, 255), 2) 
   
     else: 
         cv2.putText(img, 'circle', (x, y), 
