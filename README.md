@@ -1,5 +1,7 @@
 # cs5510-robot
 
+**Note:** Work on this repo has ceased. Use at your own discretion and risk.
+
 ## Dependencies
 
 Install dependencies by running this command on your Raspberry Pi:
